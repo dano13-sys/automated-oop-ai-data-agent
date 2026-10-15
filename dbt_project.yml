@@ -1,0 +1,16 @@
+name: 'weather_analytics'
+version: '1.0.0'
+config-version: 2
+
+profile: 'duckdb_profile'
+
+model-paths: ["models"]
+
+# STEP 4: Define the target DuckDB directory configuration parameters!
+#         Set up your local file targets by telling dbt to use the 'duckdb' plugin adapter.
+#         Instruct it to point directly to your relative warehouse file: 'weather_data.duckdb'
+#         This maps dbt's reading lens to the exact file your Python engine populates.
+models:
+  weather_analytics:
+    +materialized: table
+    +schema: 'weather_data'    

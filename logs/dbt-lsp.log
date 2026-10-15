@@ -1,0 +1,1131 @@
+==================== 2026-10-09T18:59:00.551712Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-10-09T18:59:00.552366Z | 8638f59e-52a8-429d-9747-1810659fe6ec ====================
+18:59:00.552954 [info ]: Starting dbt LSP server
+18:59:00.553481 [info ]: Connecting to LSP client on port 8000
+18:59:00.564335 [info ]: Successfully connected to LSP client
+18:59:00.564364 [info ]: Creating LSP service...
+18:59:00.565777 [info ]: Creating LSP server...
+18:59:00.565788 [info ]: Starting LSP server...
+19:15:45.132956 [debug]: Ignoring unsupported LSP notification
+==================== 2026-10-09T19:21:32.693069Z | 896d620c-75c3-45d6-9b5f-f40ced5f090a ====================
+19:21:32.693189 [info ]: Started loading project
+19:21:32.694453 [info ]: Loading ~/.dbt/profiles.yml
+19:21:32.696132 [info ]: Finished loading project [  0.00s]
+19:21:32.696240 [error]: [IoError (dbt1001)]: Profile 'duckdb_profile' not found in profiles.yml
+  --> dbt_project.yml:5:10
+19:21:32.696358 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [3ms]
+==================== 2026-10-09T19:38:47.492238Z | 6fe2674a-6fe2-48b3-bbbf-4ce8509c2265 ====================
+19:38:47.492320 [info ]: Started loading project
+19:38:47.492769 [info ]: Loading ~/.dbt/profiles.yml
+19:38:47.500379 [debug]:    Started loading packages
+19:38:47.501890 [debug]:     Loaded [  0.00s] packages
+19:38:47.502721 [info ]: Finished loading project [  0.01s]
+19:38:47.502971 [info ]: Started parsing
+19:38:47.600578 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.weather_analytics
+19:38:47.601129 [info ]: Finished parsing [  0.10s]
+19:38:47.601333 [info ]: Cached model count updated: 0 models (estimate)
+19:38:47.601339 [info ]: Cached model count updated: 0 models (accurate)
+19:38:47.601390 [info ]: Started scheduling
+19:38:47.601502 [info ]: Finished scheduling [  0.00s]
+19:38:47.601525 [debug]: Compilation - 0 nodes selected: {}
+19:38:47.601569 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+19:38:47.601577 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+19:38:47.601634 [info ]: Started scheduling
+19:38:47.601647 [info ]: Finished scheduling [  0.00s]
+19:38:47.602530 [info ]: Started building task graph
+19:38:47.602596 [info ]: Finished building task graph [  0.00s]
+19:38:47.660711 [info ]: Started scheduling
+19:38:47.660731 [info ]: Finished scheduling [  0.00s]
+19:38:47.660826 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 3 warnings for target 'dev' [168ms]
+19:38:47.660872 [info ]: Cached model count updated: 0 models (accurate)
+19:38:47.958212 [info ]: Loading ~/.dbt/profiles.yml
+==================== 2026-10-09T19:38:49.332678Z | d832864c-79d8-4374-961a-3d59cd1e409a ====================
+19:38:49.332726 [info ]: Started loading project
+19:38:49.333121 [info ]: Loading ~/.dbt/profiles.yml
+19:38:49.335427 [info ]: Finished loading project [  0.00s]
+19:38:49.346137 [info ]: Cached model count updated: 0 models (estimate)
+19:38:49.346147 [info ]: Cached model count updated: 0 models (accurate)
+19:38:49.346158 [info ]: Started scheduling
+19:38:49.346176 [info ]: Finished scheduling [  0.00s]
+19:38:49.346183 [debug]: Compilation - 0 nodes selected: {}
+19:38:49.346197 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+19:38:49.346869 [info ]: Started building task graph
+19:38:49.346881 [info ]: Finished building task graph [  0.00s]
+19:38:49.399296 [info ]: Started scheduling
+19:38:49.399314 [info ]: Finished scheduling [  0.00s]
+19:38:49.399350 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 warning for target 'dev' [66ms]
+19:38:49.399395 [info ]: Cached model count updated: 0 models (accurate)
+==================== 2026-10-09T19:56:53.901527Z | f27df40d-09f9-47dc-a5eb-2f0f28085936 ====================
+19:56:53.901586 [info ]: Started loading project
+19:56:53.901977 [info ]: Loading ~/.dbt/profiles.yml
+19:56:53.904927 [info ]: Finished loading project [  0.00s]
+19:56:53.917034 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [15ms]
+19:56:53.917069 [info ]: Cached model count updated: 0 models (accurate)
+==================== 2026-10-09T19:56:55.575780Z | 6a3dcddd-1549-4d4e-b34d-a7e7a2b06f56 ====================
+19:56:55.575827 [info ]: Started loading project
+19:56:55.576230 [info ]: Loading ~/.dbt/profiles.yml
+19:56:55.578839 [info ]: Finished loading project [  0.00s]
+19:56:55.589871 [info ]: Cached model count updated: 0 models (estimate)
+19:56:55.589881 [info ]: Cached model count updated: 0 models (accurate)
+19:56:55.589894 [info ]: Started scheduling
+19:56:55.589915 [info ]: Finished scheduling [  0.00s]
+19:56:55.589926 [debug]: Compilation - 0 nodes selected: {}
+19:56:55.589937 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+19:56:55.590592 [info ]: Started building task graph
+19:56:55.590607 [info ]: Finished building task graph [  0.00s]
+19:56:55.643081 [info ]: Started scheduling
+19:56:55.643100 [info ]: Finished scheduling [  0.00s]
+19:56:55.643128 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 warning for target 'dev' [67ms]
+19:56:55.643162 [info ]: Cached model count updated: 0 models (accurate)
+==================== 2026-10-09T19:57:51.019186Z | ac91a891-34dc-4d35-bb75-f786d959ac74 ====================
+19:57:51.019227 [info ]: Started loading project
+19:57:51.019591 [info ]: Loading ~/.dbt/profiles.yml
+19:57:51.021889 [info ]: Finished loading project [  0.00s]
+19:57:51.032914 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [13ms]
+19:57:51.032945 [info ]: Cached model count updated: 0 models (accurate)
+==================== 2026-10-09T19:57:52.757147Z | e9ed67cc-92bf-49cc-8223-766f1ceac55b ====================
+19:57:52.757193 [info ]: Started loading project
+19:57:52.757604 [info ]: Loading ~/.dbt/profiles.yml
+19:57:52.759930 [info ]: Finished loading project [  0.00s]
+19:57:52.770473 [info ]: Cached model count updated: 0 models (estimate)
+19:57:52.770484 [info ]: Cached model count updated: 0 models (accurate)
+19:57:52.770494 [info ]: Started scheduling
+19:57:52.770512 [info ]: Finished scheduling [  0.00s]
+19:57:52.770519 [debug]: Compilation - 0 nodes selected: {}
+19:57:52.770532 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+19:57:52.771189 [info ]: Started building task graph
+19:57:52.771202 [info ]: Finished building task graph [  0.00s]
+19:57:52.824084 [info ]: Started scheduling
+19:57:52.824105 [info ]: Finished scheduling [  0.00s]
+19:57:52.824131 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 warning for target 'dev' [66ms]
+19:57:52.824177 [info ]: Cached model count updated: 0 models (accurate)
+==================== 2026-10-09T19:58:08.619035Z | 5c5b8442-98bb-4e06-afdc-49883af2d48f ====================
+19:58:08.619078 [info ]: Started loading project
+19:58:08.619466 [info ]: Loading ~/.dbt/profiles.yml
+19:58:08.622074 [info ]: Finished loading project [  0.00s]
+19:58:08.634705 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [15ms]
+19:58:08.634741 [info ]: Cached model count updated: 0 models (accurate)
+==================== 2026-10-09T19:58:08.962641Z | 566a6312-1a3f-4ce6-80d2-d94032775f9e ====================
+19:58:08.962697 [info ]: Started loading project
+19:58:08.963099 [info ]: Loading ~/.dbt/profiles.yml
+19:58:08.965657 [info ]: Finished loading project [  0.00s]
+19:58:08.977227 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [14ms]
+19:58:08.977262 [info ]: Cached model count updated: 0 models (accurate)
+==================== 2026-10-09T19:58:10.728129Z | 184bc00c-2a37-4171-ad5b-0a506395a2e5 ====================
+19:58:10.728175 [info ]: Started loading project
+19:58:10.728566 [info ]: Loading ~/.dbt/profiles.yml
+19:58:10.730955 [info ]: Finished loading project [  0.00s]
+19:58:10.741474 [info ]: Cached model count updated: 0 models (estimate)
+19:58:10.741483 [info ]: Cached model count updated: 0 models (accurate)
+19:58:10.741494 [info ]: Started scheduling
+19:58:10.741512 [info ]: Finished scheduling [  0.00s]
+19:58:10.741521 [debug]: Compilation - 0 nodes selected: {}
+19:58:10.741530 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+19:58:10.742185 [info ]: Started building task graph
+19:58:10.742197 [info ]: Finished building task graph [  0.00s]
+19:58:10.794209 [info ]: Started scheduling
+19:58:10.794226 [info ]: Finished scheduling [  0.00s]
+19:58:10.794252 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 warning for target 'dev' [66ms]
+19:58:10.794390 [info ]: Cached model count updated: 0 models (accurate)
+==================== 2026-10-09T19:58:42.826131Z | b16d1d07-fecc-4eb4-a631-3c76fa6dba94 ====================
+19:58:42.826182 [info ]: Started loading project
+19:58:42.826571 [info ]: Loading ~/.dbt/profiles.yml
+19:58:42.829050 [info ]: Finished loading project [  0.00s]
+==================== 2026-10-09T19:58:42.829913Z | 05130ec5-6516-47fc-9839-7282754b5568 ====================
+19:58:42.829934 [info ]: Started loading project
+19:58:42.830320 [info ]: Loading ~/.dbt/profiles.yml
+19:58:42.834726 [debug]:    Started loading packages
+19:58:42.835999 [debug]:     Loaded [  0.00s] packages
+19:58:42.836419 [info ]: Finished loading project [  0.01s]
+19:58:42.836511 [info ]: Started parsing
+19:58:42.853772 [debug]: Finished parsing models/staging/stg_weather_logs.sql [  0.00s]
+19:58:42.916758 [info ]: Finished parsing [  0.08s]
+19:58:42.916985 [info ]: Cached model count updated: 1 models (estimate)
+19:58:42.916994 [info ]: Cached model count updated: 1 models (accurate)
+19:58:42.917013 [info ]: Started scheduling
+19:58:42.917040 [info ]: Finished scheduling [  0.00s]
+19:58:42.917047 [debug]: Compilation - 0 nodes selected: {}
+19:58:42.917058 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+19:58:42.917066 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+19:58:42.917107 [info ]: Started scheduling
+19:58:42.917125 [info ]: Finished scheduling [  0.00s]
+19:58:42.917614 [info ]: Started building task graph
+19:58:42.917626 [info ]: Finished building task graph [  0.00s]
+19:58:43.010177 [info ]: Started scheduling
+19:58:43.010206 [info ]: Finished scheduling [  0.00s]
+19:58:43.010269 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [180ms]
+19:58:43.010299 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [184ms]
+19:58:43.011337 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T19:58:44.754059Z | d960c525-b0da-43f2-8ec1-7272eff95f85 ====================
+19:58:44.754105 [info ]: Started loading project
+19:58:44.754500 [info ]: Loading ~/.dbt/profiles.yml
+19:58:44.757167 [info ]: Finished loading project [  0.00s]
+19:58:44.767695 [info ]: Cached model count updated: 1 models (estimate)
+19:58:44.767705 [info ]: Cached model count updated: 1 models (accurate)
+19:58:44.767719 [info ]: Started scheduling
+19:58:44.767741 [info ]: Finished scheduling [  0.00s]
+19:58:44.767749 [debug]: Compilation - 0 nodes selected: {}
+19:58:44.767758 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+19:58:44.768397 [info ]: Started building task graph
+19:58:44.768411 [info ]: Finished building task graph [  0.00s]
+19:58:44.821212 [info ]: Started scheduling
+19:58:44.821231 [info ]: Finished scheduling [  0.00s]
+19:58:44.821259 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 warning for target 'dev' [67ms]
+19:58:44.821425 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:00:49.694829Z | c5334de6-f8c8-4808-9859-bf6cbb640325 ====================
+20:00:49.694885 [info ]: Started loading project
+20:00:49.695294 [info ]: Loading ~/.dbt/profiles.yml
+20:00:49.698028 [info ]: Finished loading project [  0.00s]
+==================== 2026-10-09T20:00:49.698888Z | df72be71-d9ff-4154-a0c9-9814c84bd66d ====================
+20:00:49.698912 [info ]: Started loading project
+20:00:49.699216 [info ]: Loading ~/.dbt/profiles.yml
+20:00:49.704040 [debug]:    Started loading packages
+20:00:49.705343 [debug]:     Loaded [  0.00s] packages
+20:00:49.705770 [info ]: Finished loading project [  0.01s]
+20:00:49.705865 [info ]: Started parsing
+20:00:49.721804 [debug]: Finished parsing models/staging/source.yml [  0.00s]
+20:00:49.722429 [debug]: Finished parsing models/staging/stg_weather_logs.sql [  0.00s]
+20:00:49.786502 [info ]: Finished parsing [  0.08s]
+20:00:49.786737 [info ]: Cached model count updated: 1 models (estimate)
+20:00:49.786745 [info ]: Cached model count updated: 1 models (accurate)
+20:00:49.786757 [info ]: Started scheduling
+20:00:49.786779 [info ]: Finished scheduling [  0.00s]
+20:00:49.786787 [debug]: Compilation - 0 nodes selected: {}
+20:00:49.786799 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+20:00:49.786809 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:00:49.786849 [info ]: Started scheduling
+20:00:49.786858 [info ]: Finished scheduling [  0.00s]
+20:00:49.787267 [info ]: Started building task graph
+20:00:49.787281 [info ]: Finished building task graph [  0.00s]
+20:00:49.834444 [info ]: Started scheduling
+20:00:49.834467 [info ]: Finished scheduling [  0.00s]
+20:00:49.834523 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [135ms]
+20:00:49.834551 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [139ms]
+20:00:49.835570 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:00:51.533071Z | b8c3758c-2eba-42de-ae26-7727748275dc ====================
+20:00:51.533118 [info ]: Started loading project
+20:00:51.533514 [info ]: Loading ~/.dbt/profiles.yml
+20:00:51.536070 [info ]: Finished loading project [  0.00s]
+20:00:51.547449 [info ]: Cached model count updated: 1 models (estimate)
+20:00:51.547459 [info ]: Cached model count updated: 1 models (accurate)
+20:00:51.547472 [info ]: Started scheduling
+20:00:51.547494 [info ]: Finished scheduling [  0.00s]
+20:00:51.547502 [debug]: Compilation - 0 nodes selected: {}
+20:00:51.547514 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:00:51.548127 [info ]: Started building task graph
+20:00:51.548140 [info ]: Finished building task graph [  0.00s]
+20:00:51.599732 [info ]: Started scheduling
+20:00:51.599754 [info ]: Finished scheduling [  0.00s]
+20:00:51.599781 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 warning for target 'dev' [66ms]
+20:00:51.599824 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:07:54.207108Z | 4124961e-17db-44bc-8553-b05873793cba ====================
+20:07:54.207160 [info ]: Started loading project
+20:07:54.207571 [info ]: Loading ~/.dbt/profiles.yml
+20:07:54.211915 [info ]: Started parsing
+20:07:54.231846 [info ]: Finished loading project [  0.02s]
+20:07:54.232190 [debug]: Finished parsing models/staging/source.yml [  0.00s]
+20:07:54.304235 [info ]: Finished parsing [  0.09s]
+20:07:54.305059 [info ]: Cached model count updated: 1 models (estimate)
+20:07:54.305069 [info ]: Cached model count updated: 1 models (accurate)
+20:07:54.305094 [info ]: Started scheduling
+20:07:54.305171 [info ]: Finished scheduling [  0.00s]
+20:07:54.305180 [debug]: Compilation - 0 nodes selected: {}
+20:07:54.305198 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:weather_analytics.openweather.raw_weather_logs' does not match any enabled nodes
+20:07:54.305208 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:07:54.305668 [info ]: Started building task graph
+20:07:54.305683 [info ]: Finished building task graph [  0.00s]
+20:07:54.357683 [info ]: Started scheduling
+20:07:54.357717 [info ]: Finished scheduling [  0.00s]
+20:07:54.357902 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [150ms]
+20:07:54.357940 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:07:56.039894Z | e2cd4a9b-aaef-421b-85f9-8d93d255f66b ====================
+20:07:56.039942 [info ]: Started loading project
+20:07:56.040343 [info ]: Loading ~/.dbt/profiles.yml
+20:07:56.042906 [info ]: Finished loading project [  0.00s]
+20:07:56.053232 [info ]: Cached model count updated: 1 models (estimate)
+20:07:56.053242 [info ]: Cached model count updated: 1 models (accurate)
+20:07:56.053256 [info ]: Started scheduling
+20:07:56.053280 [info ]: Finished scheduling [  0.00s]
+20:07:56.053290 [debug]: Compilation - 0 nodes selected: {}
+20:07:56.053300 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:07:56.053872 [info ]: Started building task graph
+20:07:56.053884 [info ]: Finished building task graph [  0.00s]
+20:07:56.105592 [info ]: Started scheduling
+20:07:56.105612 [info ]: Finished scheduling [  0.00s]
+20:07:56.105640 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 warning for target 'dev' [65ms]
+20:07:56.105684 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:08:09.674108Z | 3cbe354d-8c22-4ebd-bc25-2eab321db767 ====================
+20:08:09.674157 [info ]: Started loading project
+20:08:09.674558 [info ]: Loading ~/.dbt/profiles.yml
+20:08:09.677226 [info ]: Finished loading project [  0.00s]
+20:08:09.687763 [info ]: Cached model count updated: 1 models (estimate)
+20:08:09.687774 [info ]: Cached model count updated: 1 models (accurate)
+20:08:09.687791 [info ]: Started scheduling
+20:08:09.687832 [info ]: Finished scheduling [  0.00s]
+20:08:09.687840 [debug]: Compilation - 0 nodes selected: {}
+20:08:09.687853 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+fqn:model.weather_analytics.stg_weather_logs' does not match any enabled nodes
+20:08:09.687861 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:08:09.688462 [info ]: Started building task graph
+20:08:09.688475 [info ]: Finished building task graph [  0.00s]
+20:08:09.741234 [info ]: Started scheduling
+20:08:09.741261 [info ]: Finished scheduling [  0.00s]
+20:08:09.741279 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [67ms]
+20:08:09.741309 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:08:11.566416Z | 5ab6e226-aea2-461b-81d7-4d4ad43a646d ====================
+20:08:11.566461 [info ]: Started loading project
+20:08:11.566853 [info ]: Loading ~/.dbt/profiles.yml
+20:08:11.569440 [info ]: Finished loading project [  0.00s]
+20:08:11.579945 [info ]: Cached model count updated: 1 models (estimate)
+20:08:11.579955 [info ]: Cached model count updated: 1 models (accurate)
+20:08:11.579969 [info ]: Started scheduling
+20:08:11.579993 [info ]: Finished scheduling [  0.00s]
+20:08:11.580002 [debug]: Compilation - 0 nodes selected: {}
+20:08:11.580012 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:08:11.580600 [info ]: Started building task graph
+20:08:11.580612 [info ]: Finished building task graph [  0.00s]
+20:08:11.632185 [info ]: Started scheduling
+20:08:11.632208 [info ]: Finished scheduling [  0.00s]
+20:08:11.632226 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 warning for target 'dev' [65ms]
+20:08:11.632261 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:13:30.970042Z | 378de08d-0a4d-464d-8a13-b565f8fc5f86 ====================
+20:13:30.970095 [info ]: Started loading project
+20:13:30.970511 [info ]: Loading ~/.dbt/profiles.yml
+20:13:30.974841 [info ]: Started parsing
+20:13:30.998681 [info ]: Finished loading project [  0.03s]
+20:13:30.999869 [debug]: Finished parsing models/staging/stg_weather_logs.sql [  0.00s]
+20:13:31.068756 [error]: [DependencyNotFound (dbt1048)]: Source 'weather_data.weather_logs' not found in project. Searched for 'weather_analytics.weather_data.weather_logs, weather_data.weather_logs'
+  --> models/staging/stg_weather_logs.sql:7:10
+20:13:31.069246 [info ]: Finished parsing [  0.09s]
+20:13:31.070160 [info ]: Cached model count updated: 1 models (estimate)
+20:13:31.070168 [info ]: Cached model count updated: 1 models (accurate)
+20:13:31.070184 [info ]: Started scheduling
+20:13:31.070233 [info ]: Finished scheduling [  0.00s]
+20:13:31.070243 [debug]: Compilation - 1 nodes selected: {"model.weather_analytics.stg_weather_logs"}
+20:13:31.070769 [info ]: Started building task graph
+20:13:31.070838 [info ]: Finished building task graph [  0.00s]
+20:13:31.125014 [info ]: Started rendering (1 nodes)
+20:13:31.125055 [info ]: Started model main_weather_data.stg_weather_logs
+20:13:31.125077 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:13:31.125806 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: weather_data, table name: weather_logs
+(in models/staging/stg_weather_logs.sql:7:10)
+  --> models/staging/stg_weather_logs.sql:7:10
+20:13:31.125848 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [error]
+20:13:31.125860 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 1 errors)
+20:13:31.125900 [info ]: Started analyzing (1 nodes)
+20:13:31.125905 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:13:31.125922 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [skipped]
+20:13:31.125927 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+20:13:31.125929 [info ]:     Failed model main_weather_data.stg_weather_logs (table) [1 of 1 in 0.00s]
+20:13:31.127801 [info ]: Started scheduling
+20:13:31.127840 [info ]: Finished scheduling [  0.00s]
+20:13:31.128070 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 errors for target 'dev' [158ms]
+Processed: 1 model
+Summary: 1 total | 1 error
+20:13:31.128116 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:13:32.785671Z | 11cf9dd1-0770-4436-9a38-918f0fbe9ee9 ====================
+20:13:32.785719 [info ]: Started loading project
+20:13:32.786123 [info ]: Loading ~/.dbt/profiles.yml
+20:13:32.788949 [info ]: Finished loading project [  0.00s]
+20:13:32.799387 [info ]: Cached model count updated: 1 models (estimate)
+20:13:32.799397 [info ]: Cached model count updated: 1 models (accurate)
+20:13:32.799411 [info ]: Started scheduling
+20:13:32.799454 [info ]: Finished scheduling [  0.00s]
+20:13:32.799462 [debug]: Compilation - 1 nodes selected: {"model.weather_analytics.stg_weather_logs"}
+20:13:32.800046 [info ]: Started building task graph
+20:13:32.800069 [info ]: Finished building task graph [  0.00s]
+20:13:32.851319 [info ]: Started rendering (1 nodes)
+20:13:32.851335 [info ]: Started model main_weather_data.stg_weather_logs
+20:13:32.851342 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:13:32.851719 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: weather_data, table name: weather_logs
+(in models/staging/stg_weather_logs.sql:7:10)
+  --> models/staging/stg_weather_logs.sql:7:10
+20:13:32.851745 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [error]
+20:13:32.851753 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 1 errors)
+20:13:32.851765 [info ]: Started analyzing (1 nodes)
+20:13:32.851767 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:13:32.851775 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [skipped]
+20:13:32.851778 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+20:13:32.851780 [info ]:     Failed model main_weather_data.stg_weather_logs (table) [1 of 1 in 0.00s]
+20:13:32.853148 [info ]: Started scheduling
+20:13:32.853164 [info ]: Finished scheduling [  0.00s]
+20:13:32.853207 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error for target 'dev' [67ms]
+Processed: 1 model
+Summary: 1 total | 1 error
+20:13:32.853250 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:13:59.360251Z | 2a04b622-453a-4fae-acf4-03a34451d05a ====================
+20:13:59.360300 [info ]: Started loading project
+20:13:59.360705 [info ]: Loading ~/.dbt/profiles.yml
+20:13:59.363534 [info ]: Finished loading project [  0.00s]
+20:13:59.373915 [info ]: Cached model count updated: 1 models (estimate)
+20:13:59.373927 [info ]: Cached model count updated: 1 models (accurate)
+20:13:59.373945 [info ]: Started scheduling
+20:13:59.373979 [info ]: Finished scheduling [  0.00s]
+20:13:59.373988 [debug]: Compilation - 0 nodes selected: {}
+20:13:59.374002 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:weather_analytics.openweather.raw_weather_logs' does not match any enabled nodes
+20:13:59.374010 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:13:59.374656 [info ]: Started building task graph
+20:13:59.374669 [info ]: Finished building task graph [  0.00s]
+20:13:59.444608 [info ]: Started scheduling
+20:13:59.444649 [info ]: Finished scheduling [  0.00s]
+20:13:59.444686 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [84ms]
+20:13:59.444727 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:14:01.179008Z | aba7b59c-cda3-4165-9b48-a926b2bba837 ====================
+20:14:01.179044 [info ]: Started loading project
+20:14:01.179432 [info ]: Loading ~/.dbt/profiles.yml
+20:14:01.182147 [info ]: Finished loading project [  0.00s]
+20:14:01.192555 [info ]: Cached model count updated: 1 models (estimate)
+20:14:01.192566 [info ]: Cached model count updated: 1 models (accurate)
+20:14:01.192580 [info ]: Started scheduling
+20:14:01.192612 [info ]: Finished scheduling [  0.00s]
+20:14:01.192620 [debug]: Compilation - 1 nodes selected: {"model.weather_analytics.stg_weather_logs"}
+20:14:01.193242 [info ]: Started building task graph
+20:14:01.193266 [info ]: Finished building task graph [  0.00s]
+20:14:01.244184 [info ]: Started rendering (1 nodes)
+20:14:01.244200 [info ]: Started model main_weather_data.stg_weather_logs
+20:14:01.244207 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:14:01.244770 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: weather_data, table name: weather_logs
+(in models/staging/stg_weather_logs.sql:7:10)
+  --> models/staging/stg_weather_logs.sql:7:10
+20:14:01.244805 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [error]
+20:14:01.244815 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 1 errors)
+20:14:01.244830 [info ]: Started analyzing (1 nodes)
+20:14:01.244834 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:14:01.244845 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [skipped]
+20:14:01.244848 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+20:14:01.244852 [info ]:     Failed model main_weather_data.stg_weather_logs (table) [1 of 1 in 0.00s]
+20:14:01.246356 [info ]: Started scheduling
+20:14:01.246377 [info ]: Finished scheduling [  0.00s]
+20:14:01.246406 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error for target 'dev' [67ms]
+Processed: 1 model
+Summary: 1 total | 1 error
+20:14:01.246441 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:14:03.152282Z | 804174d6-b16b-4bec-9c33-d7d208391fc5 ====================
+20:14:03.152327 [info ]: Started loading project
+20:14:03.152723 [info ]: Loading ~/.dbt/profiles.yml
+20:14:03.155420 [info ]: Finished loading project [  0.00s]
+20:14:03.165797 [info ]: Cached model count updated: 1 models (estimate)
+20:14:03.165807 [info ]: Cached model count updated: 1 models (accurate)
+20:14:03.165823 [info ]: Started scheduling
+20:14:03.165854 [info ]: Finished scheduling [  0.00s]
+20:14:03.165862 [debug]: Compilation - 0 nodes selected: {}
+20:14:03.165874 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:weather_analytics.openweather.raw_weather_logs' does not match any enabled nodes
+20:14:03.165881 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:14:03.166502 [info ]: Started building task graph
+20:14:03.166514 [info ]: Finished building task graph [  0.00s]
+20:14:03.217607 [info ]: Started scheduling
+20:14:03.217625 [info ]: Finished scheduling [  0.00s]
+20:14:03.217652 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [65ms]
+20:14:03.217679 [info ]: Cached model count updated: 1 models (accurate)
+20:14:03.217856 [debug]: Ignoring unsupported LSP notification
+==================== 2026-10-09T20:14:03.347324Z | 9340b3ef-b37f-4c58-8968-cb9d013db824 ====================
+20:14:03.347385 [info ]: Started loading project
+20:14:03.347826 [info ]: Loading ~/.dbt/profiles.yml
+20:14:03.350709 [info ]: Finished loading project [  0.00s]
+20:14:03.361628 [info ]: Cached model count updated: 1 models (estimate)
+20:14:03.361639 [info ]: Cached model count updated: 1 models (accurate)
+20:14:03.361656 [info ]: Started scheduling
+20:14:03.361689 [info ]: Finished scheduling [  0.00s]
+20:14:03.361697 [debug]: Compilation - 0 nodes selected: {}
+20:14:03.361710 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:weather_analytics.openweather.raw_weather_logs' does not match any enabled nodes
+20:14:03.361718 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:14:03.362325 [info ]: Started building task graph
+20:14:03.362338 [info ]: Finished building task graph [  0.00s]
+20:14:03.413499 [info ]: Started scheduling
+20:14:03.413525 [info ]: Finished scheduling [  0.00s]
+20:14:03.413554 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [66ms]
+20:14:03.413738 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:14:04.938585Z | a797796b-1bfd-481e-8766-117bd29c5deb ====================
+20:14:04.938633 [info ]: Started loading project
+20:14:04.939029 [info ]: Loading ~/.dbt/profiles.yml
+20:14:04.941786 [info ]: Finished loading project [  0.00s]
+20:14:04.952529 [info ]: Cached model count updated: 1 models (estimate)
+20:14:04.952540 [info ]: Cached model count updated: 1 models (accurate)
+20:14:04.952558 [info ]: Started scheduling
+20:14:04.952591 [info ]: Finished scheduling [  0.00s]
+20:14:04.952603 [debug]: Compilation - 0 nodes selected: {}
+20:14:04.952617 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:weather_analytics.openweather.raw_weather_logs' does not match any enabled nodes
+20:14:04.952626 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:14:04.953399 [info ]: Started building task graph
+20:14:04.953412 [info ]: Finished building task graph [  0.00s]
+20:14:05.006478 [info ]: Started scheduling
+20:14:05.006519 [info ]: Finished scheduling [  0.00s]
+20:14:05.006555 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [67ms]
+20:14:05.006596 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:14:06.729668Z | 671a4f6e-3ef1-43c8-a50d-57505f185508 ====================
+20:14:06.729716 [info ]: Started loading project
+20:14:06.730110 [info ]: Loading ~/.dbt/profiles.yml
+20:14:06.732827 [info ]: Finished loading project [  0.00s]
+20:14:06.742959 [info ]: Cached model count updated: 1 models (estimate)
+20:14:06.742969 [info ]: Cached model count updated: 1 models (accurate)
+20:14:06.742982 [info ]: Started scheduling
+20:14:06.743012 [info ]: Finished scheduling [  0.00s]
+20:14:06.743020 [debug]: Compilation - 1 nodes selected: {"model.weather_analytics.stg_weather_logs"}
+20:14:06.743620 [info ]: Started building task graph
+20:14:06.743642 [info ]: Finished building task graph [  0.00s]
+20:14:06.795326 [info ]: Started rendering (1 nodes)
+20:14:06.795342 [info ]: Started model main_weather_data.stg_weather_logs
+20:14:06.795349 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:14:06.795788 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: weather_data, table name: weather_logs
+(in models/staging/stg_weather_logs.sql:7:10)
+  --> models/staging/stg_weather_logs.sql:7:10
+20:14:06.795818 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [error]
+20:14:06.795826 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 1 errors)
+20:14:06.795839 [info ]: Started analyzing (1 nodes)
+20:14:06.795843 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:14:06.795851 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [skipped]
+20:14:06.795854 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+20:14:06.795857 [info ]:     Failed model main_weather_data.stg_weather_logs (table) [1 of 1 in 0.00s]
+20:14:06.797312 [info ]: Started scheduling
+20:14:06.797333 [info ]: Finished scheduling [  0.00s]
+20:14:06.797362 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error for target 'dev' [67ms]
+Processed: 1 model
+Summary: 1 total | 1 error
+20:14:06.797402 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:14:14.699653Z | d03b5e99-cce5-4258-b3c1-c77420108d2e ====================
+20:14:14.699698 [info ]: Started loading project
+20:14:14.700081 [info ]: Loading ~/.dbt/profiles.yml
+20:14:14.704679 [info ]: Started parsing
+20:14:14.734292 [info ]: Finished loading project [  0.03s]
+20:14:14.737674 [debug]: Finished parsing models/staging/stg_weather_logs.sql [  0.00s]
+20:14:14.809104 [error]: [DependencyNotFound (dbt1048)]: Source 'openweather.weather_logs' not found in project. Searched for 'weather_analytics.openweather.weather_logs, openweather.weather_logs'
+  --> models/staging/stg_weather_logs.sql:7:10
+20:14:14.809979 [info ]: Finished parsing [  0.11s]
+20:14:14.811551 [info ]: Cached model count updated: 1 models (estimate)
+20:14:14.811564 [info ]: Cached model count updated: 1 models (accurate)
+20:14:14.811584 [info ]: Started scheduling
+20:14:14.811624 [info ]: Finished scheduling [  0.00s]
+20:14:14.811635 [debug]: Compilation - 1 nodes selected: {"model.weather_analytics.stg_weather_logs"}
+20:14:14.812253 [info ]: Started building task graph
+20:14:14.812280 [info ]: Finished building task graph [  0.00s]
+20:14:14.860924 [info ]: Started rendering (1 nodes)
+20:14:14.860942 [info ]: Started model main_weather_data.stg_weather_logs
+20:14:14.860948 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:14:14.861370 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: openweather, table name: weather_logs
+(in models/staging/stg_weather_logs.sql:7:10)
+  --> models/staging/stg_weather_logs.sql:7:10
+20:14:14.861403 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [error]
+20:14:14.861411 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 1 errors)
+20:14:14.861425 [info ]: Started analyzing (1 nodes)
+20:14:14.861430 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:14:14.861439 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [skipped]
+20:14:14.861442 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+20:14:14.861444 [info ]:     Failed model main_weather_data.stg_weather_logs (table) [1 of 1 in 0.00s]
+20:14:14.863865 [info ]: Started scheduling
+20:14:14.863904 [info ]: Finished scheduling [  0.00s]
+20:14:14.864239 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 errors for target 'dev' [164ms]
+Processed: 1 model
+Summary: 1 total | 1 error
+20:14:14.864281 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:14:16.592875Z | 352db103-7633-4a78-add5-ee5c9376ad72 ====================
+20:14:16.592922 [info ]: Started loading project
+20:14:16.593307 [info ]: Loading ~/.dbt/profiles.yml
+20:14:16.596198 [info ]: Finished loading project [  0.00s]
+20:14:16.607205 [info ]: Cached model count updated: 1 models (estimate)
+20:14:16.607216 [info ]: Cached model count updated: 1 models (accurate)
+20:14:16.607231 [info ]: Started scheduling
+20:14:16.607261 [info ]: Finished scheduling [  0.00s]
+20:14:16.607271 [debug]: Compilation - 1 nodes selected: {"model.weather_analytics.stg_weather_logs"}
+20:14:16.607858 [info ]: Started building task graph
+20:14:16.607881 [info ]: Finished building task graph [  0.00s]
+20:14:16.657904 [info ]: Started rendering (1 nodes)
+20:14:16.657920 [info ]: Started model main_weather_data.stg_weather_logs
+20:14:16.657927 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:14:16.658336 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: openweather, table name: weather_logs
+(in models/staging/stg_weather_logs.sql:7:10)
+  --> models/staging/stg_weather_logs.sql:7:10
+20:14:16.658365 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [error]
+20:14:16.658373 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 1 errors)
+20:14:16.658386 [info ]: Started analyzing (1 nodes)
+20:14:16.658390 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:14:16.658398 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [skipped]
+20:14:16.658401 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+20:14:16.658404 [info ]:     Failed model main_weather_data.stg_weather_logs (table) [1 of 1 in 0.00s]
+20:14:16.659979 [info ]: Started scheduling
+20:14:16.659996 [info ]: Finished scheduling [  0.00s]
+20:14:16.660040 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error for target 'dev' [67ms]
+Processed: 1 model
+Summary: 1 total | 1 error
+20:14:16.660095 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:14:20.346425Z | c4c1a26d-fc11-477c-bc06-6aa3302b1976 ====================
+20:14:20.346473 [info ]: Started loading project
+20:14:20.346872 [info ]: Loading ~/.dbt/profiles.yml
+20:14:20.349852 [info ]: Finished loading project [  0.00s]
+20:14:20.360326 [info ]: Cached model count updated: 1 models (estimate)
+20:14:20.360337 [info ]: Cached model count updated: 1 models (accurate)
+20:14:20.360354 [info ]: Started scheduling
+20:14:20.360386 [info ]: Finished scheduling [  0.00s]
+20:14:20.360395 [debug]: Compilation - 0 nodes selected: {}
+20:14:20.360407 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:weather_analytics.openweather.raw_weather_logs' does not match any enabled nodes
+20:14:20.360415 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:14:20.360988 [info ]: Started building task graph
+20:14:20.361003 [info ]: Finished building task graph [  0.00s]
+20:14:20.413304 [info ]: Started scheduling
+20:14:20.413334 [info ]: Finished scheduling [  0.00s]
+20:14:20.413363 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [66ms]
+20:14:20.413396 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:14:22.190652Z | 9c5591c5-6868-4520-a81b-b58aeaf19268 ====================
+20:14:22.190698 [info ]: Started loading project
+20:14:22.191090 [info ]: Loading ~/.dbt/profiles.yml
+20:14:22.193920 [info ]: Finished loading project [  0.00s]
+20:14:22.204126 [info ]: Cached model count updated: 1 models (estimate)
+20:14:22.204135 [info ]: Cached model count updated: 1 models (accurate)
+20:14:22.204149 [info ]: Started scheduling
+20:14:22.204178 [info ]: Finished scheduling [  0.00s]
+20:14:22.204188 [debug]: Compilation - 1 nodes selected: {"model.weather_analytics.stg_weather_logs"}
+20:14:22.204775 [info ]: Started building task graph
+20:14:22.204798 [info ]: Finished building task graph [  0.00s]
+20:14:22.255292 [info ]: Started rendering (1 nodes)
+20:14:22.255306 [info ]: Started model main_weather_data.stg_weather_logs
+20:14:22.255313 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:14:22.255741 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: openweather, table name: weather_logs
+(in models/staging/stg_weather_logs.sql:7:10)
+  --> models/staging/stg_weather_logs.sql:7:10
+20:14:22.255794 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [error]
+20:14:22.255811 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 1 errors)
+20:14:22.255833 [info ]: Started analyzing (1 nodes)
+20:14:22.255843 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:14:22.255859 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [skipped]
+20:14:22.255868 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+20:14:22.255875 [info ]:     Failed model main_weather_data.stg_weather_logs (table) [1 of 1 in 0.00s]
+20:14:22.257331 [info ]: Started scheduling
+20:14:22.257349 [info ]: Finished scheduling [  0.00s]
+20:14:22.257379 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error for target 'dev' [66ms]
+Processed: 1 model
+Summary: 1 total | 1 error
+20:14:22.257415 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:14:25.185754Z | 63662992-f236-4b7c-b143-7480bdf2f707 ====================
+20:14:25.185797 [info ]: Started loading project
+20:14:25.186188 [info ]: Loading ~/.dbt/profiles.yml
+20:14:25.189117 [info ]: Finished loading project [  0.00s]
+20:14:25.199328 [info ]: Cached model count updated: 1 models (estimate)
+20:14:25.199337 [info ]: Cached model count updated: 1 models (accurate)
+20:14:25.199353 [info ]: Started scheduling
+20:14:25.199383 [info ]: Finished scheduling [  0.00s]
+20:14:25.199392 [debug]: Compilation - 0 nodes selected: {}
+20:14:25.199405 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:weather_analytics.openweather.raw_weather_logs' does not match any enabled nodes
+20:14:25.199414 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:14:25.199970 [info ]: Started building task graph
+20:14:25.199982 [info ]: Finished building task graph [  0.00s]
+20:14:25.251465 [info ]: Started scheduling
+20:14:25.251487 [info ]: Finished scheduling [  0.00s]
+20:14:25.251513 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [65ms]
+20:14:25.251542 [info ]: Cached model count updated: 1 models (accurate)
+20:14:25.251717 [debug]: Ignoring unsupported LSP notification
+==================== 2026-10-09T20:14:25.387745Z | 353662b0-0cdf-40f9-a071-64afd4c35eaa ====================
+20:14:25.387777 [info ]: Started loading project
+20:14:25.388171 [info ]: Loading ~/.dbt/profiles.yml
+20:14:25.390805 [info ]: Finished loading project [  0.00s]
+20:14:25.400190 [info ]: Cached model count updated: 1 models (estimate)
+20:14:25.400199 [info ]: Cached model count updated: 1 models (accurate)
+20:14:25.400215 [info ]: Started scheduling
+20:14:25.400246 [info ]: Finished scheduling [  0.00s]
+20:14:25.400256 [debug]: Compilation - 0 nodes selected: {}
+20:14:25.400268 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:weather_analytics.openweather.raw_weather_logs' does not match any enabled nodes
+20:14:25.400277 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:14:25.400823 [info ]: Started building task graph
+20:14:25.400840 [info ]: Finished building task graph [  0.00s]
+20:14:25.460777 [info ]: Started scheduling
+20:14:25.460816 [info ]: Finished scheduling [  0.00s]
+20:14:25.460851 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [73ms]
+20:14:25.460888 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:14:27.174884Z | 0c442234-023c-4903-a5c8-d449741f6a51 ====================
+20:14:27.174920 [info ]: Started loading project
+20:14:27.175329 [info ]: Loading ~/.dbt/profiles.yml
+20:14:27.178189 [info ]: Finished loading project [  0.00s]
+20:14:27.188145 [info ]: Cached model count updated: 1 models (estimate)
+20:14:27.188157 [info ]: Cached model count updated: 1 models (accurate)
+20:14:27.188174 [info ]: Started scheduling
+20:14:27.188206 [info ]: Finished scheduling [  0.00s]
+20:14:27.188216 [debug]: Compilation - 1 nodes selected: {"model.weather_analytics.stg_weather_logs"}
+20:14:27.188973 [info ]: Started building task graph
+20:14:27.188996 [info ]: Finished building task graph [  0.00s]
+20:14:27.238829 [info ]: Started rendering (1 nodes)
+20:14:27.238851 [info ]: Started model main_weather_data.stg_weather_logs
+20:14:27.238858 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:14:27.239648 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: openweather, table name: weather_logs
+(in models/staging/stg_weather_logs.sql:7:10)
+  --> models/staging/stg_weather_logs.sql:7:10
+20:14:27.239687 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [error]
+20:14:27.239698 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 1 errors)
+20:14:27.239714 [info ]: Started analyzing (1 nodes)
+20:14:27.239721 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:14:27.239731 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [skipped]
+20:14:27.239734 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+20:14:27.239738 [info ]:     Failed model main_weather_data.stg_weather_logs (table) [1 of 1 in 0.00s]
+20:14:27.242254 [info ]: Started scheduling
+20:14:27.242279 [info ]: Finished scheduling [  0.00s]
+20:14:27.242313 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error for target 'dev' [67ms]
+Processed: 1 model
+Summary: 1 total | 1 error
+20:14:27.242357 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:14:37.441107Z | 69f1d320-0de3-400d-8e70-36d2d92ff263 ====================
+20:14:37.441159 [info ]: Started loading project
+20:14:37.441598 [info ]: Loading ~/.dbt/profiles.yml
+20:14:37.446699 [info ]: Started parsing
+20:14:37.479041 [info ]: Finished loading project [  0.04s]
+20:14:37.480237 [debug]: Finished parsing models/staging/stg_weather_logs.sql [  0.00s]
+20:14:37.546539 [info ]: Finished parsing [  0.10s]
+20:14:37.547318 [info ]: Cached model count updated: 1 models (estimate)
+20:14:37.547327 [info ]: Cached model count updated: 1 models (accurate)
+20:14:37.547340 [info ]: Started scheduling
+20:14:37.547387 [info ]: Finished scheduling [  0.00s]
+20:14:37.547395 [debug]: Compilation - 1 nodes selected: {"model.weather_analytics.stg_weather_logs"}
+20:14:37.547875 [info ]: Started building task graph
+20:14:37.547902 [info ]: Finished building task graph [  0.00s]
+20:14:37.595391 [info ]: Started rendering (1 nodes)
+20:14:37.595406 [info ]: Started model main_weather_data.stg_weather_logs
+20:14:37.595412 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:14:37.599052 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:14:37.599135 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:14:37.599148 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+20:14:37.599159 [info ]: Started analyzing (1 nodes)
+20:14:37.599163 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:14:37.602991 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:14:37.602999 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+20:14:37.603003 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [1 of 1 in 0.01s]
+20:14:37.604669 [info ]: Started scheduling
+20:14:37.604705 [info ]: Finished scheduling [  0.00s]
+20:14:37.604899 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [163ms]
+Processed: 1 model
+Summary: 1 total | 1 success
+20:14:37.604938 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:14:39.335660Z | d09a4238-21e5-41fe-8890-2d247148aba3 ====================
+20:14:39.335717 [info ]: Started loading project
+20:14:39.336112 [info ]: Loading ~/.dbt/profiles.yml
+20:14:39.339150 [info ]: Finished loading project [  0.00s]
+20:14:39.350179 [info ]: Cached model count updated: 1 models (estimate)
+20:14:39.350189 [info ]: Cached model count updated: 1 models (accurate)
+20:14:39.350204 [info ]: Started scheduling
+20:14:39.350236 [info ]: Finished scheduling [  0.00s]
+20:14:39.350243 [debug]: Compilation - 1 nodes selected: {"model.weather_analytics.stg_weather_logs"}
+20:14:39.350839 [info ]: Started building task graph
+20:14:39.350864 [info ]: Finished building task graph [  0.00s]
+20:14:39.402419 [info ]: Started rendering (1 nodes)
+20:14:39.402434 [info ]: Started model main_weather_data.stg_weather_logs
+20:14:39.402441 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:14:39.403062 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:14:39.403156 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:14:39.403170 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+20:14:39.403181 [info ]: Started analyzing (1 nodes)
+20:14:39.403185 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:14:39.403358 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:14:39.403364 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+20:14:39.403368 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [1 of 1 in 0.00s]
+20:14:39.404261 [info ]: Started scheduling
+20:14:39.404277 [info ]: Finished scheduling [  0.00s]
+20:14:39.404305 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [68ms]
+Processed: 1 model
+Summary: 1 total | 1 success
+20:14:39.404351 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:16:24.045665Z | 1f0fd517-69e4-4c57-ba6c-4fb1c1832fa4 ====================
+20:16:24.045704 [info ]: Started loading project
+20:16:24.046112 [info ]: Loading ~/.dbt/profiles.yml
+20:16:24.049022 [info ]: Finished loading project [  0.00s]
+20:16:24.058881 [info ]: Cached model count updated: 1 models (estimate)
+20:16:24.058894 [info ]: Cached model count updated: 1 models (accurate)
+20:16:24.058911 [info ]: Started scheduling
+20:16:24.058947 [info ]: Finished scheduling [  0.00s]
+20:16:24.058957 [debug]: Compilation - 0 nodes selected: {}
+20:16:24.058970 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:weather_analytics.openweather.raw_weather_logs' does not match any enabled nodes
+20:16:24.058980 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:16:24.059595 [info ]: Started building task graph
+20:16:24.059609 [info ]: Finished building task graph [  0.00s]
+20:16:24.115431 [info ]: Started scheduling
+20:16:24.115493 [info ]: Finished scheduling [  0.00s]
+20:16:24.115534 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [69ms]
+20:16:24.115795 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:16:25.891431Z | 51d4cdf7-9da6-41b9-aba7-efa5431468d8 ====================
+20:16:25.891479 [info ]: Started loading project
+20:16:25.891893 [info ]: Loading ~/.dbt/profiles.yml
+20:16:25.894880 [info ]: Finished loading project [  0.00s]
+20:16:25.904866 [info ]: Cached model count updated: 1 models (estimate)
+20:16:25.904875 [info ]: Cached model count updated: 1 models (accurate)
+20:16:25.904889 [info ]: Started scheduling
+20:16:25.904921 [info ]: Finished scheduling [  0.00s]
+20:16:25.904930 [debug]: Compilation - 1 nodes selected: {"model.weather_analytics.stg_weather_logs"}
+20:16:25.905508 [info ]: Started building task graph
+20:16:25.905533 [info ]: Finished building task graph [  0.00s]
+20:16:25.956190 [info ]: Started rendering (1 nodes)
+20:16:25.956206 [info ]: Started model main_weather_data.stg_weather_logs
+20:16:25.956213 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:16:25.956710 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:16:25.956779 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:16:25.956804 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+20:16:25.956821 [info ]: Started analyzing (1 nodes)
+20:16:25.956831 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:16:25.957038 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:16:25.957044 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+20:16:25.957047 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [1 of 1 in 0.00s]
+20:16:25.957896 [info ]: Started scheduling
+20:16:25.957912 [info ]: Finished scheduling [  0.00s]
+20:16:25.957930 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [66ms]
+Processed: 1 model
+Summary: 1 total | 1 success
+20:16:25.957965 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:21:33.987498Z | cc927c68-b0c2-478e-a2a8-02b061008c56 ====================
+20:21:33.987536 [info ]: Started loading project
+20:21:33.987952 [info ]: Loading ~/.dbt/profiles.yml
+20:21:33.991036 [info ]: Finished loading project [  0.00s]
+20:21:34.001125 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [13ms]
+20:21:34.001160 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:21:34.325371Z | fafd7aa7-f762-46ad-af65-e8674472cfdc ====================
+20:21:34.325411 [info ]: Started loading project
+20:21:34.325839 [info ]: Loading ~/.dbt/profiles.yml
+20:21:34.328907 [info ]: Finished loading project [  0.00s]
+20:21:34.338616 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [13ms]
+20:21:34.338655 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:21:35.861542Z | 8a336f2e-c52f-47e4-b70f-e805ad5f81cb ====================
+20:21:35.861577 [info ]: Started loading project
+20:21:35.861968 [info ]: Loading ~/.dbt/profiles.yml
+20:21:35.864824 [info ]: Finished loading project [  0.00s]
+20:21:35.874430 [info ]: Cached model count updated: 1 models (estimate)
+20:21:35.874441 [info ]: Cached model count updated: 1 models (accurate)
+20:21:35.874459 [info ]: Started scheduling
+20:21:35.874497 [info ]: Finished scheduling [  0.00s]
+20:21:35.874509 [debug]: Compilation - 1 nodes selected: {"model.weather_analytics.stg_weather_logs"}
+20:21:35.875166 [info ]: Started building task graph
+20:21:35.875197 [info ]: Finished building task graph [  0.00s]
+20:21:35.926148 [info ]: Started rendering (1 nodes)
+20:21:35.926165 [info ]: Started model main_weather_data.stg_weather_logs
+20:21:35.926173 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:21:35.926608 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:21:35.926664 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:21:35.926678 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+20:21:35.926689 [info ]: Started analyzing (1 nodes)
+20:21:35.926693 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:21:35.926890 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:21:35.926897 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+20:21:35.926900 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [1 of 1 in 0.00s]
+20:21:35.928010 [info ]: Started scheduling
+20:21:35.928033 [info ]: Finished scheduling [  0.00s]
+20:21:35.928053 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [66ms]
+Processed: 1 model
+Summary: 1 total | 1 success
+20:21:35.928091 [info ]: Cached model count updated: 1 models (accurate)
+==================== 2026-10-09T20:22:34.865260Z | 015c2126-5fed-4677-925a-1bf0c1f5c2d7 ====================
+20:22:34.865297 [info ]: Started loading project
+20:22:34.865687 [info ]: Loading ~/.dbt/profiles.yml
+20:22:34.868699 [info ]: Finished loading project [  0.00s]
+==================== 2026-10-09T20:22:34.869560Z | 7de09e66-805f-4944-badb-4e7096a36293 ====================
+20:22:34.869582 [info ]: Started loading project
+20:22:34.869885 [info ]: Loading ~/.dbt/profiles.yml
+20:22:34.874358 [debug]:    Started loading packages
+20:22:34.876070 [debug]:     Loaded [  0.00s] packages
+20:22:34.876474 [info ]: Finished loading project [  0.01s]
+20:22:34.876568 [info ]: Started parsing
+20:22:34.891095 [debug]: Finished parsing models/staging/source.yml [  0.00s]
+20:22:34.891710 [debug]: Finished parsing models/marts/fct_weather_summary.sql [  0.00s]
+20:22:34.892080 [debug]: Finished parsing models/staging/stg_weather_logs.sql [  0.00s]
+20:22:34.956762 [info ]: Finished parsing [  0.08s]
+20:22:34.957076 [info ]: Cached model count updated: 2 models (estimate)
+20:22:34.957084 [info ]: Cached model count updated: 2 models (accurate)
+20:22:34.957095 [info ]: Started scheduling
+20:22:34.957114 [info ]: Finished scheduling [  0.00s]
+20:22:34.957121 [debug]: Compilation - 0 nodes selected: {}
+20:22:34.957131 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+20:22:34.957140 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:22:34.957179 [info ]: Started scheduling
+20:22:34.957198 [info ]: Finished scheduling [  0.00s]
+20:22:34.957279 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "weather_data", schema: "main", table: "raw_weather_logs" }) and interval: None
+20:22:34.957724 [info ]: Started building task graph
+20:22:34.957735 [info ]: Finished building task graph [  0.00s]
+20:22:35.006492 [info ]: Started scheduling
+20:22:35.006514 [info ]: Finished scheduling [  0.00s]
+20:22:35.006563 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [137ms]
+20:22:35.006587 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [141ms]
+20:22:35.008407 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-09T20:22:36.600962Z | e2b0b3f4-a6e2-4db8-8c14-372b881587d2 ====================
+20:22:36.601002 [info ]: Started loading project
+20:22:36.601410 [info ]: Loading ~/.dbt/profiles.yml
+20:22:36.604080 [info ]: Finished loading project [  0.00s]
+20:22:36.614587 [info ]: Cached model count updated: 2 models (estimate)
+20:22:36.614596 [info ]: Cached model count updated: 2 models (accurate)
+20:22:36.614612 [info ]: Started scheduling
+20:22:36.614644 [info ]: Finished scheduling [  0.00s]
+20:22:36.614654 [debug]: Compilation - 1 nodes selected: {"model.weather_analytics.stg_weather_logs"}
+20:22:36.615308 [info ]: Started building task graph
+20:22:36.615333 [info ]: Finished building task graph [  0.00s]
+20:22:36.666437 [info ]: Started rendering (1 nodes)
+20:22:36.666453 [info ]: Started model main_weather_data.stg_weather_logs
+20:22:36.666460 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:22:36.669210 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:22:36.669278 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:22:36.669292 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+20:22:36.669303 [info ]: Started analyzing (1 nodes)
+20:22:36.669307 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:22:36.669476 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:22:36.669482 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+20:22:36.669485 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [1 of 1 in 0.00s]
+20:22:36.670372 [info ]: Started scheduling
+20:22:36.670387 [info ]: Finished scheduling [  0.00s]
+20:22:36.670414 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [69ms]
+Processed: 1 model
+Summary: 1 total | 1 success
+20:22:36.670452 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-09T20:31:05.669525Z | 6616300e-dcbe-49f4-a231-bf8661bd9139 ====================
+20:31:05.669572 [info ]: Started loading project
+20:31:05.669990 [info ]: Loading ~/.dbt/profiles.yml
+20:31:05.674041 [info ]: Started parsing
+20:31:05.693063 [info ]: Finished loading project [  0.02s]
+20:31:05.694113 [debug]: Finished parsing models/marts/fct_weather_summary.sql [  0.00s]
+20:31:05.763619 [info ]: Finished parsing [  0.09s]
+20:31:05.764468 [info ]: Cached model count updated: 2 models (estimate)
+20:31:05.764478 [info ]: Cached model count updated: 2 models (accurate)
+20:31:05.764495 [info ]: Started scheduling
+20:31:05.764561 [info ]: Finished scheduling [  0.00s]
+20:31:05.764571 [debug]: Compilation - 2 nodes selected: {"model.weather_analytics.fct_weather_summary", "model.weather_analytics.stg_weather_logs"}
+20:31:05.765066 [info ]: Started building task graph
+20:31:05.765099 [info ]: Finished building task graph [  0.00s]
+20:31:05.815411 [info ]: Started rendering (2 nodes)
+20:31:05.815428 [info ]: Started model main_weather_data.fct_weather_summary
+20:31:05.815436 [debug]: Started rendering model main_weather_data.fct_weather_summary
+20:31:05.815449 [info ]: Started model main_weather_data.stg_weather_logs
+20:31:05.815452 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:31:05.815845 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:31:05.815936 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:31:05.815966 [info ]: Started analyzing (2 nodes)
+20:31:05.815974 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:31:05.816250 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:31:05.816264 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [2 of 2 in 0.00s]
+20:31:05.818965 [debug]: Compiled SQL for node model.weather_analytics.fct_weather_summary at target\.lsp\compiled\weather_analytics\models\marts\fct_weather_summary.sql
+20:31:05.819016 [debug]: Finished rendering [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:31:05.819027 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:31:05.819035 [debug]: Started analyzing model main_weather_data.fct_weather_summary
+20:31:05.824168 [debug]: Finished analyzing [  0.01s] model main_weather_data.fct_weather_summary [success]
+20:31:05.824181 [info ]: Finished analyzing [  0.01s] (2 nodes, 0 skipped, 0 errors)
+20:31:05.824186 [info ]:  Succeeded model main_weather_data.fct_weather_summary (table) [1 of 2 in 0.01s]
+20:31:05.825375 [info ]: Started scheduling
+20:31:05.825413 [info ]: Finished scheduling [  0.00s]
+20:31:05.825596 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [156ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+20:31:05.825634 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-09T20:31:07.483345Z | 8268759c-cbaf-4789-9dee-3f0491cb9e23 ====================
+20:31:07.483386 [info ]: Started loading project
+20:31:07.483785 [info ]: Loading ~/.dbt/profiles.yml
+20:31:07.486467 [info ]: Finished loading project [  0.00s]
+20:31:07.496219 [info ]: Cached model count updated: 2 models (estimate)
+20:31:07.496229 [info ]: Cached model count updated: 2 models (accurate)
+20:31:07.496244 [info ]: Started scheduling
+20:31:07.496281 [info ]: Finished scheduling [  0.00s]
+20:31:07.496291 [debug]: Compilation - 2 nodes selected: {"model.weather_analytics.fct_weather_summary", "model.weather_analytics.stg_weather_logs"}
+20:31:07.496878 [info ]: Started building task graph
+20:31:07.496906 [info ]: Finished building task graph [  0.00s]
+20:31:07.546847 [info ]: Started rendering (2 nodes)
+20:31:07.546863 [info ]: Started model main_weather_data.fct_weather_summary
+20:31:07.546870 [debug]: Started rendering model main_weather_data.fct_weather_summary
+20:31:07.546884 [info ]: Started model main_weather_data.stg_weather_logs
+20:31:07.546887 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:31:07.547203 [debug]: Compiled SQL for node model.weather_analytics.fct_weather_summary at target\.lsp\compiled\weather_analytics\models\marts\fct_weather_summary.sql
+20:31:07.547269 [debug]: Finished rendering [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:31:07.547300 [info ]: Started analyzing (2 nodes)
+20:31:07.547312 [debug]: Started analyzing model main_weather_data.fct_weather_summary
+20:31:07.547464 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:31:07.547533 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:31:07.547555 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:31:07.547573 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:31:07.547776 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:31:07.547789 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [2 of 2 in 0.00s]
+20:31:07.547816 [debug]: Finished analyzing [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:31:07.547828 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:31:07.547835 [info ]:  Succeeded model main_weather_data.fct_weather_summary (table) [1 of 2 in 0.00s]
+20:31:07.548819 [info ]: Started scheduling
+20:31:07.548835 [info ]: Finished scheduling [  0.00s]
+20:31:07.548863 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [65ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+20:31:07.548903 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-14T20:18:26.256975Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-10-14T20:18:26.257162Z | 2c034fb5-7a19-4be3-8cd6-7dcbbe6b9e0b ====================
+20:18:26.257186 [info ]: Starting dbt LSP server
+20:18:26.257215 [info ]: Connecting to LSP client on port 8000
+20:18:26.262258 [info ]: Successfully connected to LSP client
+20:18:26.262277 [info ]: Creating LSP service...
+20:18:26.263491 [info ]: Creating LSP server...
+20:18:26.263502 [info ]: Starting LSP server...
+20:18:26.501181 [info ]: Loading ~/.dbt/profiles.yml
+20:18:26.638953 [debug]: Ignoring unsupported LSP notification
+==================== 2026-10-14T20:18:26.785568Z | 059d0bd6-4183-4217-9c73-f783bc26839b ====================
+20:18:26.785676 [info ]: Started loading project
+20:18:26.786209 [info ]: Loading ~/.dbt/profiles.yml
+20:18:26.792498 [debug]:    Started loading packages
+20:18:26.794372 [debug]:     Loaded [  0.00s] packages
+20:18:26.795374 [info ]: Finished loading project [  0.01s]
+20:18:26.795626 [info ]: Started parsing
+20:18:26.815468 [debug]: Finished parsing models/staging/source.yml [  0.00s]
+20:18:26.818801 [debug]: Finished parsing models/marts/fct_weather_summary.sql [  0.00s]
+20:18:26.819362 [debug]: Finished parsing models/staging/stg_weather_logs.sql [  0.00s]
+20:18:26.855976 [debug]: Ignoring unsupported LSP notification
+20:18:26.902517 [info ]: Finished parsing [  0.11s]
+20:18:26.903131 [info ]: Cached model count updated: 2 models (estimate)
+20:18:26.903143 [info ]: Cached model count updated: 2 models (accurate)
+20:18:26.903214 [info ]: Started scheduling
+20:18:26.903471 [info ]: Finished scheduling [  0.00s]
+20:18:26.903533 [debug]: Compilation - 2 nodes selected: {"model.weather_analytics.fct_weather_summary", "model.weather_analytics.stg_weather_logs"}
+20:18:26.903633 [info ]: Started scheduling
+20:18:26.903658 [info ]: Finished scheduling [  0.00s]
+20:18:26.903788 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "weather_data", schema: "main", table: "raw_weather_logs" }) and interval: None
+20:18:26.905141 [info ]: Started building task graph
+20:18:26.905269 [info ]: Finished building task graph [  0.00s]
+20:18:26.962578 [info ]: Started rendering (2 nodes)
+20:18:26.962648 [info ]: Started model main_weather_data.fct_weather_summary
+20:18:26.962682 [debug]: Started rendering model main_weather_data.fct_weather_summary
+20:18:26.962716 [info ]: Started model main_weather_data.stg_weather_logs
+20:18:26.962723 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:18:26.966309 [debug]: Compiled SQL for node model.weather_analytics.fct_weather_summary at target\.lsp\compiled\weather_analytics\models\marts\fct_weather_summary.sql
+20:18:26.966324 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:18:26.966493 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:18:26.966533 [info ]: Started analyzing (2 nodes)
+20:18:26.966540 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:18:26.966564 [debug]: Finished rendering [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:18:26.966568 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:18:26.966576 [debug]: Started analyzing model main_weather_data.fct_weather_summary
+20:18:26.970700 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:18:26.970717 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [2 of 2 in 0.01s]
+20:18:26.974432 [debug]: Finished analyzing [  0.01s] model main_weather_data.fct_weather_summary [success]
+20:18:26.974447 [info ]: Finished analyzing [  0.01s] (2 nodes, 0 skipped, 0 errors)
+20:18:26.974452 [info ]:  Succeeded model main_weather_data.fct_weather_summary (table) [1 of 2 in 0.01s]
+20:18:26.977452 [info ]: Started scheduling
+20:18:26.977479 [info ]: Finished scheduling [  0.00s]
+20:18:26.977575 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [192ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+20:18:26.977644 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-14T20:18:28.719126Z | 22ac39cf-2cc0-4dc1-a358-618cef160d2c ====================
+20:18:28.719174 [info ]: Started loading project
+20:18:28.719532 [info ]: Loading ~/.dbt/profiles.yml
+20:18:28.722177 [info ]: Finished loading project [  0.00s]
+20:18:28.732418 [info ]: Cached model count updated: 2 models (estimate)
+20:18:28.732429 [info ]: Cached model count updated: 2 models (accurate)
+20:18:28.732444 [info ]: Started scheduling
+20:18:28.732480 [info ]: Finished scheduling [  0.00s]
+20:18:28.732491 [debug]: Compilation - 2 nodes selected: {"model.weather_analytics.fct_weather_summary", "model.weather_analytics.stg_weather_logs"}
+20:18:28.733212 [info ]: Started building task graph
+20:18:28.733241 [info ]: Finished building task graph [  0.00s]
+20:18:28.785069 [info ]: Started rendering (2 nodes)
+20:18:28.785085 [info ]: Started model main_weather_data.fct_weather_summary
+20:18:28.785092 [debug]: Started rendering model main_weather_data.fct_weather_summary
+20:18:28.785109 [info ]: Started model main_weather_data.stg_weather_logs
+20:18:28.785112 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:18:28.785481 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:18:28.785492 [debug]: Compiled SQL for node model.weather_analytics.fct_weather_summary at target\.lsp\compiled\weather_analytics\models\marts\fct_weather_summary.sql
+20:18:28.785530 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:18:28.785546 [info ]: Started analyzing (2 nodes)
+20:18:28.785550 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:18:28.785575 [debug]: Finished rendering [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:18:28.785584 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:18:28.785591 [debug]: Started analyzing model main_weather_data.fct_weather_summary
+20:18:28.785752 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:18:28.785764 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [2 of 2 in 0.00s]
+20:18:28.785908 [debug]: Finished analyzing [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:18:28.785919 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:18:28.785923 [info ]:  Succeeded model main_weather_data.fct_weather_summary (table) [1 of 2 in 0.00s]
+20:18:28.787864 [info ]: Started scheduling
+20:18:28.787891 [info ]: Finished scheduling [  0.00s]
+20:18:28.787930 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [68ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+20:18:28.787990 [info ]: Cached model count updated: 2 models (accurate)
+20:40:01.977754 [debug]: Ignoring unsupported LSP notification
+20:40:04.523673 [debug]: Ignoring unsupported LSP notification
+20:50:32.224193 [debug]: Ignoring unsupported LSP notification

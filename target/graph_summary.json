@@ -1,0 +1,1 @@
+{"_invocation_id": "6babf1de-cf27-42f9-af2d-8487f75fa3cb", "linked": {"0": {"name": "source.weather_analytics.openweather.raw_weather_logs", "type": "source", "succ": [1]}, "1": {"name": "model.weather_analytics.stg_weather_logs", "type": "model", "succ": [2]}, "2": {"name": "model.weather_analytics.fct_weather_summary", "type": "model"}}}
