@@ -1,2 +1,5 @@
 .env
-dbt_internal_packages/
+*.duckdb
+logs/
+target/
+dbt_packages/

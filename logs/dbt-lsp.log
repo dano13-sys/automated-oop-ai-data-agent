@@ -1129,3 +1129,759 @@ Summary: 2 total | 2 success
 20:40:01.977754 [debug]: Ignoring unsupported LSP notification
 20:40:04.523673 [debug]: Ignoring unsupported LSP notification
 20:50:32.224193 [debug]: Ignoring unsupported LSP notification
+==================== 2026-10-15T19:19:36.043705Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-10-15T19:19:36.043912Z | a32d2ef9-2207-468f-bd1c-0938cfde2543 ====================
+19:19:36.043939 [info ]: Starting dbt LSP server
+19:19:36.043969 [info ]: Connecting to LSP client on port 8000
+19:19:36.050030 [info ]: Successfully connected to LSP client
+19:19:36.050048 [info ]: Creating LSP service...
+19:19:36.053715 [info ]: Creating LSP server...
+19:19:36.053726 [info ]: Starting LSP server...
+19:19:36.215684 [info ]: Loading ~/.dbt/profiles.yml
+19:19:36.572517 [debug]: Ignoring unsupported LSP notification
+==================== 2026-10-15T20:29:36.882158Z | 4d24128d-8902-42d2-88e9-f1a8047f80f6 ====================
+20:29:36.882246 [info ]: Started loading project
+20:29:36.882767 [info ]: Loading ~/.dbt/profiles.yml
+20:29:36.889061 [debug]:    Started loading packages
+20:29:36.890903 [debug]:     Loaded [  0.00s] packages
+20:29:36.891777 [info ]: Finished loading project [  0.01s]
+20:29:36.892027 [info ]: Started parsing
+20:29:36.909812 [debug]: Finished parsing models/staging/source.yml [  0.00s]
+20:29:36.912859 [debug]: Finished parsing models/marts/fct_weather_summary.sql [  0.00s]
+20:29:36.913239 [debug]: Finished parsing models/staging/stg_weather_logs.sql [  0.00s]
+20:29:36.982799 [info ]: Finished parsing [  0.09s]
+20:29:36.983245 [info ]: Cached model count updated: 2 models (estimate)
+20:29:36.983254 [info ]: Cached model count updated: 2 models (accurate)
+20:29:36.983307 [info ]: Started scheduling
+20:29:36.983419 [info ]: Finished scheduling [  0.00s]
+20:29:36.983439 [debug]: Compilation - 0 nodes selected: {}
+20:29:36.983486 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+20:29:36.983505 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:29:36.983559 [info ]: Started scheduling
+20:29:36.983611 [info ]: Finished scheduling [  0.00s]
+20:29:36.983724 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "weather_data", schema: "main", table: "raw_weather_logs" }) and interval: None
+20:29:36.984691 [info ]: Started building task graph
+20:29:36.984752 [info ]: Finished building task graph [  0.00s]
+20:29:37.044298 [info ]: Started scheduling
+20:29:37.044321 [info ]: Finished scheduling [  0.00s]
+20:29:37.044421 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [162ms]
+20:29:37.044486 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-15T20:29:37.366824Z | a671ca01-bbd4-474a-9b9c-3ce4f67bb0da ====================
+20:29:37.366882 [info ]: Started loading project
+20:29:37.367247 [info ]: Loading ~/.dbt/profiles.yml
+20:29:37.369870 [info ]: Finished loading project [  0.00s]
+20:29:37.380905 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [14ms]
+20:29:37.380946 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-15T20:29:39.099014Z | c510cfbf-7138-4225-9e2a-20b00a21413d ====================
+20:29:39.099062 [info ]: Started loading project
+20:29:39.099452 [info ]: Loading ~/.dbt/profiles.yml
+20:29:39.102109 [info ]: Finished loading project [  0.00s]
+20:29:39.113315 [info ]: Cached model count updated: 2 models (estimate)
+20:29:39.113325 [info ]: Cached model count updated: 2 models (accurate)
+20:29:39.113340 [info ]: Started scheduling
+20:29:39.113376 [info ]: Finished scheduling [  0.00s]
+20:29:39.113386 [debug]: Compilation - 2 nodes selected: {"model.weather_analytics.fct_weather_summary", "model.weather_analytics.stg_weather_logs"}
+20:29:39.114132 [info ]: Started building task graph
+20:29:39.114207 [info ]: Finished building task graph [  0.00s]
+20:29:39.168706 [info ]: Started rendering (2 nodes)
+20:29:39.168752 [info ]: Started model main_weather_data.fct_weather_summary
+20:29:39.168774 [debug]: Started rendering model main_weather_data.fct_weather_summary
+20:29:39.168800 [info ]: Started model main_weather_data.stg_weather_logs
+20:29:39.168805 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:29:39.172172 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:29:39.172190 [debug]: Compiled SQL for node model.weather_analytics.fct_weather_summary at target\.lsp\compiled\weather_analytics\models\marts\fct_weather_summary.sql
+20:29:39.172323 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:29:39.172388 [info ]: Started analyzing (2 nodes)
+20:29:39.172396 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:29:39.172417 [debug]: Finished rendering [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:29:39.172420 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:29:39.172427 [debug]: Started analyzing model main_weather_data.fct_weather_summary
+20:29:39.176685 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:29:39.176702 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [2 of 2 in 0.01s]
+20:29:39.180615 [debug]: Finished analyzing [  0.01s] model main_weather_data.fct_weather_summary [success]
+20:29:39.180627 [info ]: Finished analyzing [  0.01s] (2 nodes, 0 skipped, 0 errors)
+20:29:39.180631 [info ]:  Succeeded model main_weather_data.fct_weather_summary (table) [1 of 2 in 0.01s]
+20:29:39.182443 [info ]: Started scheduling
+20:29:39.182468 [info ]: Finished scheduling [  0.00s]
+20:29:39.182504 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [83ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+20:29:39.182561 [info ]: Cached model count updated: 2 models (accurate)
+20:29:39.511349 [info ]: Loading ~/.dbt/profiles.yml
+==================== 2026-10-15T20:49:14.038049Z | 9f4b06b6-c551-481c-ba78-5875062dca5f ====================
+20:49:14.038129 [info ]: Started loading project
+20:49:14.038522 [info ]: Loading profiles.yml
+20:49:14.038686 [info ]: Finished loading project [  0.00s]
+20:49:14.038759 [error]: [IoError (dbt1001)]: Profile 'duckdb_profile' not found in profiles.yml
+  --> dbt_project.yml:5:10
+20:49:14.038835 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [786us]
+20:49:14.038872 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-15T20:49:15.739373Z | 60eaf5ce-b5d6-4eb1-b700-78146b72c2c0 ====================
+20:49:15.739418 [info ]: Started loading project
+20:49:15.739797 [info ]: Loading profiles.yml
+20:49:15.740013 [error]: [IoError (dbt1001)]: Profile 'duckdb_profile' not found in profiles.yml
+  --> dbt_project.yml:5:10
+20:49:15.740088 [info ]: Finished loading project [  0.00s]
+20:49:15.740094 [info ]: Cached model count updated: 2 models (accurate)
+20:49:15.740101 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [728us]
+20:49:17.313923 [info ]: Loading profiles.yml
+==================== 2026-10-15T20:50:27.732833Z | 1d634c00-2cce-44f6-ad5c-d4607de22bc3 ====================
+20:50:27.732875 [info ]: Started loading project
+20:50:27.733256 [info ]: Loading profiles.yml
+20:50:27.736134 [info ]: Finished loading project [  0.00s]
+==================== 2026-10-15T20:50:27.737014Z | 1645ed23-4fd7-418d-884f-32c2a1cbdd00 ====================
+20:50:27.737037 [info ]: Started loading project
+20:50:27.737327 [info ]: Loading profiles.yml
+20:50:27.741524 [debug]:    Started loading packages
+20:50:27.742967 [debug]:     Loaded [  0.00s] packages
+20:50:27.743385 [info ]: Finished loading project [  0.01s]
+20:50:27.743478 [info ]: Started parsing
+20:50:27.759331 [debug]: Finished parsing models/staging/source.yml [  0.00s]
+20:50:27.760125 [debug]: Finished parsing models/marts/fct_weather_summary.sql [  0.00s]
+20:50:27.760339 [debug]: Finished parsing models/staging/stg_weather_logs.sql [  0.00s]
+20:50:27.833570 [info ]: Finished parsing [  0.09s]
+20:50:27.834007 [info ]: Cached model count updated: 2 models (estimate)
+20:50:27.834019 [info ]: Cached model count updated: 2 models (accurate)
+20:50:27.834036 [info ]: Started scheduling
+20:50:27.834065 [info ]: Finished scheduling [  0.00s]
+20:50:27.834074 [debug]: Compilation - 0 nodes selected: {}
+20:50:27.834088 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+20:50:27.834099 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:50:27.834152 [info ]: Started scheduling
+20:50:27.834177 [info ]: Finished scheduling [  0.00s]
+20:50:27.834228 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "weather_data", schema: "main", table: "raw_weather_logs" }) and interval: None
+20:50:27.834770 [info ]: Started building task graph
+20:50:27.834786 [info ]: Finished building task graph [  0.00s]
+20:50:27.892137 [info ]: Started scheduling
+20:50:27.892164 [info ]: Finished scheduling [  0.00s]
+20:50:27.892230 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [155ms]
+20:50:27.892264 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [159ms]
+20:50:27.893408 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-15T20:50:29.699716Z | 5ecab7b3-c623-4961-8539-754512daccaa ====================
+20:50:29.699762 [info ]: Started loading project
+20:50:29.700123 [info ]: Loading profiles.yml
+20:50:29.702821 [info ]: Finished loading project [  0.00s]
+20:50:29.713615 [info ]: Cached model count updated: 2 models (estimate)
+20:50:29.713625 [info ]: Cached model count updated: 2 models (accurate)
+20:50:29.713641 [info ]: Started scheduling
+20:50:29.713679 [info ]: Finished scheduling [  0.00s]
+20:50:29.713690 [debug]: Compilation - 2 nodes selected: {"model.weather_analytics.fct_weather_summary", "model.weather_analytics.stg_weather_logs"}
+20:50:29.714374 [info ]: Started building task graph
+20:50:29.714405 [info ]: Finished building task graph [  0.00s]
+20:50:29.767433 [info ]: Started rendering (2 nodes)
+20:50:29.767450 [info ]: Started model main_weather_data.fct_weather_summary
+20:50:29.767458 [debug]: Started rendering model main_weather_data.fct_weather_summary
+20:50:29.767472 [info ]: Started model main_weather_data.stg_weather_logs
+20:50:29.767476 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:50:29.770668 [debug]: Compiled SQL for node model.weather_analytics.fct_weather_summary at target\.lsp\compiled\weather_analytics\models\marts\fct_weather_summary.sql
+20:50:29.770750 [debug]: Finished rendering [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:50:29.770773 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:50:29.770786 [info ]: Started analyzing (2 nodes)
+20:50:29.770796 [debug]: Started analyzing model main_weather_data.fct_weather_summary
+20:50:29.770819 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:50:29.770829 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:50:29.770837 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:50:29.771041 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:50:29.771056 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [2 of 2 in 0.00s]
+20:50:29.771367 [debug]: Finished analyzing [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:50:29.771380 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:50:29.771385 [info ]:  Succeeded model main_weather_data.fct_weather_summary (table) [1 of 2 in 0.00s]
+20:50:29.773079 [info ]: Started scheduling
+20:50:29.773104 [info ]: Finished scheduling [  0.00s]
+20:50:29.773137 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [73ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+20:50:29.773184 [info ]: Cached model count updated: 2 models (accurate)
+20:50:30.108053 [info ]: Loading profiles.yml
+20:55:18.151026 [debug]: Ignoring unsupported LSP notification
+20:55:22.927520 [debug]: Ignoring unsupported LSP notification
+==================== 2026-10-19T19:25:17.454437Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-10-19T19:25:17.454796Z | 59825197-c492-4c7a-94e3-f307182b246f ====================
+19:25:17.454821 [info ]: Starting dbt LSP server
+19:25:17.454851 [info ]: Connecting to LSP client on port 8000
+19:25:17.460523 [info ]: Successfully connected to LSP client
+19:25:17.460567 [info ]: Creating LSP service...
+19:25:17.462017 [info ]: Creating LSP server...
+19:25:17.462027 [info ]: Starting LSP server...
+19:36:54.268009 [info ]: Loading profiles.yml
+==================== 2026-10-19T19:36:54.803408Z | 59cc482f-2ce2-41fa-aba8-4dd010547788 ====================
+19:36:54.803514 [info ]: Started loading project
+19:36:54.804079 [info ]: Loading profiles.yml
+19:36:54.809948 [debug]:    Started loading packages
+19:36:54.811590 [debug]:     Loaded [  0.00s] packages
+19:36:54.812326 [info ]: Finished loading project [  0.01s]
+19:36:54.812558 [info ]: Started parsing
+19:36:54.830084 [debug]: Finished parsing models/staging/source.yml [  0.00s]
+19:36:54.833304 [debug]: Finished parsing models/marts/fct_weather_summary.sql [  0.00s]
+19:36:54.833714 [debug]: Finished parsing models/staging/stg_weather_logs.sql [  0.00s]
+19:36:54.903083 [info ]: Finished parsing [  0.09s]
+19:36:54.903663 [info ]: Cached model count updated: 2 models (estimate)
+19:36:54.903675 [info ]: Cached model count updated: 2 models (accurate)
+19:36:54.903731 [info ]: Started scheduling
+19:36:54.903849 [info ]: Finished scheduling [  0.00s]
+19:36:54.903872 [debug]: Compilation - 0 nodes selected: {}
+19:36:54.903930 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+19:36:54.903985 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+19:36:54.904054 [info ]: Started scheduling
+19:36:54.904118 [info ]: Finished scheduling [  0.00s]
+19:36:54.904238 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "weather_data", schema: "main", table: "raw_weather_logs" }) and interval: None
+19:36:54.905041 [info ]: Started building task graph
+19:36:54.905103 [info ]: Finished building task graph [  0.00s]
+19:36:54.966124 [info ]: Started scheduling
+19:36:54.966151 [info ]: Finished scheduling [  0.00s]
+19:36:54.966266 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [162ms]
+19:36:54.966341 [info ]: Cached model count updated: 2 models (accurate)
+19:36:55.276790 [info ]: Loading profiles.yml
+==================== 2026-10-19T19:36:56.690948Z | cf6858f8-c073-4ec5-9625-36e416d2aef0 ====================
+19:36:56.690983 [info ]: Started loading project
+19:36:56.691321 [info ]: Loading profiles.yml
+19:36:56.693958 [info ]: Finished loading project [  0.00s]
+19:36:56.704471 [info ]: Cached model count updated: 2 models (estimate)
+19:36:56.704482 [info ]: Cached model count updated: 2 models (accurate)
+19:36:56.704497 [info ]: Started scheduling
+19:36:56.704535 [info ]: Finished scheduling [  0.00s]
+19:36:56.704545 [debug]: Compilation - 2 nodes selected: {"model.weather_analytics.fct_weather_summary", "model.weather_analytics.stg_weather_logs"}
+19:36:56.705452 [info ]: Started building task graph
+19:36:56.705526 [info ]: Finished building task graph [  0.00s]
+19:36:56.769778 [info ]: Started rendering (2 nodes)
+19:36:56.769822 [info ]: Started model main_weather_data.fct_weather_summary
+19:36:56.769844 [debug]: Started rendering model main_weather_data.fct_weather_summary
+19:36:56.769869 [info ]: Started model main_weather_data.stg_weather_logs
+19:36:56.769873 [debug]: Started rendering model main_weather_data.stg_weather_logs
+19:36:56.773122 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+19:36:56.773147 [debug]: Compiled SQL for node model.weather_analytics.fct_weather_summary at target\.lsp\compiled\weather_analytics\models\marts\fct_weather_summary.sql
+19:36:56.773307 [debug]: Finished rendering [  0.00s] model main_weather_data.fct_weather_summary [success]
+19:36:56.773348 [info ]: Started analyzing (2 nodes)
+19:36:56.773364 [debug]: Started analyzing model main_weather_data.fct_weather_summary
+19:36:56.773395 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+19:36:56.773403 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+19:36:56.773412 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+19:36:56.777107 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+19:36:56.777118 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [2 of 2 in 0.01s]
+19:36:56.780475 [debug]: Finished analyzing [  0.01s] model main_weather_data.fct_weather_summary [success]
+19:36:56.780487 [info ]: Finished analyzing [  0.01s] (2 nodes, 0 skipped, 0 errors)
+19:36:56.780491 [info ]:  Succeeded model main_weather_data.fct_weather_summary (table) [1 of 2 in 0.01s]
+19:36:56.782588 [info ]: Started scheduling
+19:36:56.782613 [info ]: Finished scheduling [  0.00s]
+19:36:56.782648 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [91ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+19:36:56.782701 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-19T20:27:09.982523Z | 4ee747af-9919-4e45-9ad2-52ed5fe5e1dd ====================
+20:27:09.982573 [info ]: Started loading project
+20:27:09.982962 [info ]: Loading profiles.yml
+20:27:09.986229 [info ]: Finished loading project [  0.00s]
+20:27:09.997657 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [15ms]
+20:27:09.997713 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-19T20:27:10.345977Z | 35e590dd-8f1a-4cbb-9ef2-7c3293015c37 ====================
+20:27:10.346027 [info ]: Started loading project
+20:27:10.346392 [info ]: Loading profiles.yml
+20:27:10.349323 [info ]: Finished loading project [  0.00s]
+20:27:10.361138 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [15ms]
+20:27:10.361174 [info ]: Cached model count updated: 2 models (accurate)
+20:27:11.525829 [info ]: Loading profiles.yml
+==================== 2026-10-19T20:27:11.997742Z | 266cb49f-fb48-49bb-921d-aec19d4642a7 ====================
+20:27:11.997778 [info ]: Started loading project
+20:27:11.998147 [info ]: Loading profiles.yml
+20:27:12.000726 [info ]: Finished loading project [  0.00s]
+20:27:12.011576 [info ]: Cached model count updated: 2 models (estimate)
+20:27:12.011587 [info ]: Cached model count updated: 2 models (accurate)
+20:27:12.011605 [info ]: Started scheduling
+20:27:12.011649 [info ]: Finished scheduling [  0.00s]
+20:27:12.011661 [debug]: Compilation - 2 nodes selected: {"model.weather_analytics.fct_weather_summary", "model.weather_analytics.stg_weather_logs"}
+20:27:12.012406 [info ]: Started building task graph
+20:27:12.012444 [info ]: Finished building task graph [  0.00s]
+20:27:12.086509 [info ]: Started rendering (2 nodes)
+20:27:12.086526 [info ]: Started model main_weather_data.fct_weather_summary
+20:27:12.086534 [debug]: Started rendering model main_weather_data.fct_weather_summary
+20:27:12.086548 [info ]: Started model main_weather_data.stg_weather_logs
+20:27:12.086552 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:27:12.087100 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:27:12.087208 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:27:12.087232 [info ]: Started analyzing (2 nodes)
+20:27:12.087237 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:27:12.087452 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:27:12.087459 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [2 of 2 in 0.00s]
+20:27:12.087508 [debug]: Compiled SQL for node model.weather_analytics.fct_weather_summary at target\.lsp\compiled\weather_analytics\models\marts\fct_weather_summary.sql
+20:27:12.087555 [debug]: Finished rendering [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:27:12.087562 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:27:12.087568 [debug]: Started analyzing model main_weather_data.fct_weather_summary
+20:27:12.087840 [debug]: Finished analyzing [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:27:12.087845 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:27:12.087849 [info ]:  Succeeded model main_weather_data.fct_weather_summary (table) [1 of 2 in 0.00s]
+20:27:12.089740 [info ]: Started scheduling
+20:27:12.089768 [info ]: Finished scheduling [  0.00s]
+20:27:12.089797 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [92ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+20:27:12.089839 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-21T20:15:24.647779Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-10-21T20:15:24.648012Z | ba371728-248b-4f54-8b40-2e24b254ce49 ====================
+20:15:24.648035 [info ]: Starting dbt LSP server
+20:15:24.648066 [info ]: Connecting to LSP client on port 8000
+20:15:24.652831 [info ]: Successfully connected to LSP client
+20:15:24.652848 [info ]: Creating LSP service...
+20:15:24.654062 [info ]: Creating LSP server...
+20:15:24.654071 [info ]: Starting LSP server...
+==================== 2026-10-26T19:44:06.543242Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-10-26T19:44:06.543461Z | 477e12a8-e623-4aa4-bf19-82a73ff18f06 ====================
+19:44:06.543486 [info ]: Starting dbt LSP server
+19:44:06.543519 [info ]: Connecting to LSP client on port 8000
+19:44:06.548224 [info ]: Successfully connected to LSP client
+19:44:06.548242 [info ]: Creating LSP service...
+19:44:06.550940 [info ]: Creating LSP server...
+19:44:06.550950 [info ]: Starting LSP server...
+==================== 2026-10-26T19:44:06.928665Z | 51510c9d-ce53-40bd-a1bc-6f2c1f3d5e63 ====================
+19:44:06.928799 [info ]: Started loading project
+19:44:06.929988 [info ]: Loading profiles.yml
+19:44:06.937782 [debug]:    Started loading packages
+19:44:06.940033 [debug]:     Loaded [  0.00s] packages
+19:44:06.940836 [info ]: Finished loading project [  0.01s]
+19:44:06.941084 [info ]: Started parsing (3 nodes)
+19:44:06.959087 [debug]:    Started building model nodes
+19:44:06.959093 [debug]:    Started building model nodes
+19:44:06.959124 [debug]:   Finished [  0.00s] building model nodes
+19:44:06.959128 [debug]:   Finished [  0.00s] building model nodes
+19:44:06.959360 [debug]: Finished parsing models/staging/source.yml [  0.00s]
+19:44:06.959560 [debug]:    Started resolving data tests
+19:44:06.959594 [debug]:    Started resolving data tests
+19:44:06.959607 [debug]:   Finished [  0.00s] resolving data tests
+19:44:06.959619 [debug]:   Finished [  0.00s] resolving data tests
+19:44:06.963655 [debug]: Finished parsing models/marts/fct_weather_summary.sql [  0.00s]
+19:44:06.964806 [debug]:    Started building model nodes
+19:44:06.965484 [debug]:   Finished [  0.00s] building model nodes
+19:44:06.965762 [debug]:    Started resolving data tests
+19:44:06.965775 [debug]:   Finished [  0.00s] resolving data tests
+19:44:06.965905 [debug]: Finished parsing models/staging/stg_weather_logs.sql [  0.00s]
+19:44:06.966149 [debug]:    Started typechecking macros
+19:44:07.035682 [debug]:   Finished [  0.07s] typechecking macros
+19:44:07.036578 [info ]: Finished parsing [  0.10s] (3 nodes, 0 skipped, 0 errors)
+19:44:07.037059 [info ]: Cached model count updated: 2 models (estimate)
+19:44:07.037069 [info ]: Cached model count updated: 2 models (accurate)
+19:44:07.037129 [info ]: Started scheduling
+19:44:07.037248 [info ]: Finished scheduling [  0.00s]
+19:44:07.037276 [debug]: Compilation - 0 nodes selected: {}
+19:44:07.037327 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+19:44:07.037345 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+19:44:07.037398 [info ]: Started scheduling
+19:44:07.037449 [info ]: Finished scheduling [  0.00s]
+19:44:07.037560 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "weather_data", schema: "main", table: "raw_weather_logs" }) and interval: None
+19:44:07.038572 [info ]: Started building task graph
+19:44:07.038638 [info ]: Finished building task graph [  0.00s]
+19:44:07.110728 [info ]: Started scheduling
+19:44:07.110770 [info ]: Finished scheduling [  0.00s]
+19:44:07.110880 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [182ms]
+19:44:07.110969 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-26T19:44:07.308231Z | dec5afe7-830f-41f6-8cd2-88d197d57e8d ====================
+19:44:07.308266 [info ]: Started loading project
+19:44:07.308663 [info ]: Loading profiles.yml
+19:44:07.311760 [info ]: Finished loading project [  0.00s]
+19:44:07.323203 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [14ms]
+19:44:07.323250 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-26T19:44:09.175212Z | e5288c4f-3510-4e0a-9a8e-a5a7a26d73a9 ====================
+19:44:09.175258 [info ]: Started loading project
+19:44:09.175593 [info ]: Loading profiles.yml
+19:44:09.178084 [info ]: Finished loading project [  0.00s]
+19:44:09.188855 [info ]: Cached model count updated: 2 models (estimate)
+19:44:09.188868 [info ]: Cached model count updated: 2 models (accurate)
+19:44:09.188894 [info ]: Started scheduling
+19:44:09.188944 [info ]: Finished scheduling [  0.00s]
+19:44:09.188959 [debug]: Compilation - 2 nodes selected: {"model.weather_analytics.fct_weather_summary", "model.weather_analytics.stg_weather_logs"}
+19:44:09.189845 [info ]: Started building task graph
+19:44:09.189935 [info ]: Finished building task graph [  0.00s]
+19:44:09.257476 [info ]: Started rendering (2 nodes)
+19:44:09.257522 [info ]: Started model main_weather_data.fct_weather_summary
+19:44:09.257540 [debug]: Started rendering model main_weather_data.fct_weather_summary
+19:44:09.257573 [info ]: Started model main_weather_data.stg_weather_logs
+19:44:09.257577 [debug]: Started rendering model main_weather_data.stg_weather_logs
+19:44:09.267294 [debug]: Compiled SQL for node model.weather_analytics.fct_weather_summary at target\.lsp\compiled\weather_analytics\models\marts\fct_weather_summary.sql
+19:44:09.267454 [debug]: Finished rendering [  0.01s] model main_weather_data.fct_weather_summary [success]
+19:44:09.267495 [info ]: Started analyzing (2 nodes)
+19:44:09.267503 [debug]: Started analyzing model main_weather_data.fct_weather_summary
+19:44:09.271759 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+19:44:09.272455 [debug]: Finished rendering [  0.01s] model main_weather_data.stg_weather_logs [success]
+19:44:09.272482 [info ]: Finished rendering [  0.02s] (2 nodes, 0 skipped, 0 errors)
+19:44:09.272493 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+19:44:09.274692 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+19:44:09.274705 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [2 of 2 in 0.02s]
+19:44:09.276778 [debug]: Finished analyzing [  0.01s] model main_weather_data.fct_weather_summary [success]
+19:44:09.276789 [info ]: Finished analyzing [  0.01s] (2 nodes, 0 skipped, 0 errors)
+19:44:09.276793 [info ]:  Succeeded model main_weather_data.fct_weather_summary (table) [1 of 2 in 0.02s]
+19:44:09.279415 [info ]: Started scheduling
+19:44:09.279447 [info ]: Finished scheduling [  0.00s]
+19:44:09.279488 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [104ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+19:44:09.279556 [info ]: Cached model count updated: 2 models (accurate)
+19:44:09.605130 [info ]: Loading profiles.yml
+19:56:20.451303 [debug]: Ignoring unsupported LSP notification
+19:56:22.360541 [debug]: Ignoring unsupported LSP notification
+20:00:51.166744 [debug]: Ignoring unsupported LSP notification
+20:00:52.563029 [debug]: Ignoring unsupported LSP notification
+20:01:23.820883 [debug]: Ignoring unsupported LSP notification
+20:04:38.748835 [debug]: Ignoring unsupported LSP notification
+20:12:23.880669 [debug]: Ignoring unsupported LSP notification
+20:17:38.028139 [debug]: Ignoring unsupported LSP notification
+20:24:36.172334 [debug]: Ignoring unsupported LSP notification
+20:24:39.426803 [debug]: Ignoring unsupported LSP notification
+20:24:52.466005 [debug]: Ignoring unsupported LSP notification
+20:25:57.529306 [debug]: Ignoring unsupported LSP notification
+==================== 2026-10-26T20:49:53.166040Z | d4f490fd-a415-44a3-98d3-333da55dde95 ====================
+20:49:53.166093 [info ]: Started loading project
+20:49:53.166504 [info ]: Loading profiles.yml
+20:49:53.169316 [info ]: Finished loading project [  0.00s]
+20:49:53.181379 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [15ms]
+20:49:53.181417 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-26T20:49:53.543973Z | a202f3ef-985a-4881-a444-25a270af9564 ====================
+20:49:53.544017 [info ]: Started loading project
+20:49:53.544385 [info ]: Loading profiles.yml
+20:49:53.546961 [info ]: Finished loading project [  0.00s]
+20:49:53.558988 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [15ms]
+20:49:53.559026 [info ]: Cached model count updated: 2 models (accurate)
+20:49:54.724080 [info ]: Loading profiles.yml
+==================== 2026-10-26T20:49:55.241372Z | d8ea3870-7828-46fb-bacf-658acbf3a307 ====================
+20:49:55.241413 [info ]: Started loading project
+20:49:55.241788 [info ]: Loading profiles.yml
+20:49:55.244314 [info ]: Finished loading project [  0.00s]
+20:49:55.254872 [info ]: Cached model count updated: 2 models (estimate)
+20:49:55.254882 [info ]: Cached model count updated: 2 models (accurate)
+20:49:55.254900 [info ]: Started scheduling
+20:49:55.254944 [info ]: Finished scheduling [  0.00s]
+20:49:55.254955 [debug]: Compilation - 2 nodes selected: {"model.weather_analytics.fct_weather_summary", "model.weather_analytics.stg_weather_logs"}
+20:49:55.255618 [info ]: Started building task graph
+20:49:55.255652 [info ]: Finished building task graph [  0.00s]
+20:49:55.337974 [info ]: Started rendering (2 nodes)
+20:49:55.337993 [info ]: Started model main_weather_data.fct_weather_summary
+20:49:55.338000 [debug]: Started rendering model main_weather_data.fct_weather_summary
+20:49:55.338016 [info ]: Started model main_weather_data.stg_weather_logs
+20:49:55.338020 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:49:55.338600 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:49:55.338667 [debug]: Compiled SQL for node model.weather_analytics.fct_weather_summary at target\.lsp\compiled\weather_analytics\models\marts\fct_weather_summary.sql
+20:49:55.338688 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:49:55.338735 [info ]: Started analyzing (2 nodes)
+20:49:55.338749 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:49:55.338773 [debug]: Finished rendering [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:49:55.338783 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:49:55.338792 [debug]: Started analyzing model main_weather_data.fct_weather_summary
+20:49:55.339013 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:49:55.339025 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [2 of 2 in 0.00s]
+20:49:55.339268 [debug]: Finished analyzing [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:49:55.339278 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:49:55.339284 [info ]:  Succeeded model main_weather_data.fct_weather_summary (table) [1 of 2 in 0.00s]
+20:49:55.341505 [info ]: Started scheduling
+20:49:55.341531 [info ]: Finished scheduling [  0.00s]
+20:49:55.341555 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [100ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+20:49:55.341601 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-28T19:11:37.754417Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-10-28T19:11:37.754863Z | c70413b0-7fc2-4f83-ba9a-07bcb961b655 ====================
+19:11:37.754899 [info ]: Starting dbt LSP server
+19:11:37.754932 [info ]: Connecting to LSP client on port 8000
+19:11:37.759602 [info ]: Successfully connected to LSP client
+19:11:37.759619 [info ]: Creating LSP service...
+19:11:37.761396 [info ]: Creating LSP server...
+19:11:37.761406 [info ]: Starting LSP server...
+==================== 2026-10-28T19:11:38.277135Z | 0eecae2a-4c0f-42a1-a8e3-2d8f40d75ee7 ====================
+19:11:38.277274 [info ]: Started loading project
+19:11:38.278437 [info ]: Loading profiles.yml
+19:11:38.287221 [debug]:    Started loading packages
+19:11:38.289180 [debug]:     Loaded [  0.00s] packages
+19:11:38.289960 [info ]: Finished loading project [  0.01s]
+19:11:38.290204 [info ]: Started parsing (3 nodes)
+19:11:38.309411 [debug]: Finished parsing models/staging/source.yml [  0.00s]
+19:11:38.309628 [debug]:    Started building model nodes
+19:11:38.309664 [debug]:   Finished [  0.00s] building model nodes
+19:11:38.309708 [debug]:    Started building model nodes
+19:11:38.309722 [debug]:   Finished [  0.00s] building model nodes
+19:11:38.310083 [debug]:    Started resolving data tests
+19:11:38.310120 [debug]:   Finished [  0.00s] resolving data tests
+19:11:38.310125 [debug]:    Started resolving data tests
+19:11:38.310141 [debug]:   Finished [  0.00s] resolving data tests
+19:11:38.313495 [debug]: Finished parsing models/marts/fct_weather_summary.sql [  0.00s]
+19:11:38.314003 [debug]:    Started building model nodes
+19:11:38.314689 [debug]:   Finished [  0.00s] building model nodes
+19:11:38.314996 [debug]:    Started resolving data tests
+19:11:38.315009 [debug]:   Finished [  0.00s] resolving data tests
+19:11:38.315151 [debug]: Finished parsing models/staging/stg_weather_logs.sql [  0.00s]
+19:11:38.315361 [debug]:    Started typechecking macros
+19:11:38.387697 [debug]:   Finished [  0.07s] typechecking macros
+19:11:38.388637 [info ]: Finished parsing [  0.10s] (3 nodes, 0 skipped, 0 errors)
+19:11:38.389120 [info ]: Cached model count updated: 2 models (estimate)
+19:11:38.389129 [info ]: Cached model count updated: 2 models (accurate)
+19:11:38.389190 [info ]: Started scheduling
+19:11:38.389309 [info ]: Finished scheduling [  0.00s]
+19:11:38.389335 [debug]: Compilation - 0 nodes selected: {}
+19:11:38.389384 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+19:11:38.389401 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+19:11:38.389452 [info ]: Started scheduling
+19:11:38.389504 [info ]: Finished scheduling [  0.00s]
+19:11:38.389615 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "weather_data", schema: "main", table: "raw_weather_logs" }) and interval: None
+19:11:38.391374 [info ]: Started building task graph
+19:11:38.391484 [info ]: Finished building task graph [  0.00s]
+19:11:38.463271 [info ]: Started scheduling
+19:11:38.463312 [info ]: Finished scheduling [  0.00s]
+19:11:38.463435 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [186ms]
+19:11:38.463523 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-28T19:11:38.659378Z | 3ffc8257-b3db-4f8b-b8b3-8b87d7ce07d7 ====================
+19:11:38.659418 [info ]: Started loading project
+19:11:38.659781 [info ]: Loading profiles.yml
+19:11:38.662606 [info ]: Finished loading project [  0.00s]
+19:11:38.674621 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [15ms]
+19:11:38.674672 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-28T19:11:40.518111Z | 284e8e85-8507-4295-9c37-3d6c55455d92 ====================
+19:11:40.518159 [info ]: Started loading project
+19:11:40.518504 [info ]: Loading profiles.yml
+19:11:40.521004 [info ]: Finished loading project [  0.00s]
+19:11:40.531495 [info ]: Cached model count updated: 2 models (estimate)
+19:11:40.531507 [info ]: Cached model count updated: 2 models (accurate)
+19:11:40.531532 [info ]: Started scheduling
+19:11:40.531570 [info ]: Finished scheduling [  0.00s]
+19:11:40.531581 [debug]: Compilation - 2 nodes selected: {"model.weather_analytics.fct_weather_summary", "model.weather_analytics.stg_weather_logs"}
+19:11:40.532462 [info ]: Started building task graph
+19:11:40.532544 [info ]: Finished building task graph [  0.00s]
+19:11:40.596316 [info ]: Started rendering (2 nodes)
+19:11:40.596361 [info ]: Started model main_weather_data.fct_weather_summary
+19:11:40.596379 [debug]: Started rendering model main_weather_data.fct_weather_summary
+19:11:40.596412 [info ]: Started model main_weather_data.stg_weather_logs
+19:11:40.596417 [debug]: Started rendering model main_weather_data.stg_weather_logs
+19:11:40.599797 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+19:11:40.599948 [debug]: Compiled SQL for node model.weather_analytics.fct_weather_summary at target\.lsp\compiled\weather_analytics\models\marts\fct_weather_summary.sql
+19:11:40.599951 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+19:11:40.599989 [info ]: Started analyzing (2 nodes)
+19:11:40.599997 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+19:11:40.600015 [debug]: Finished rendering [  0.00s] model main_weather_data.fct_weather_summary [success]
+19:11:40.600020 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+19:11:40.600024 [debug]: Started analyzing model main_weather_data.fct_weather_summary
+19:11:40.603951 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+19:11:40.603966 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [2 of 2 in 0.01s]
+19:11:40.607521 [debug]: Finished analyzing [  0.01s] model main_weather_data.fct_weather_summary [success]
+19:11:40.607535 [info ]: Finished analyzing [  0.01s] (2 nodes, 0 skipped, 0 errors)
+19:11:40.607539 [info ]:  Succeeded model main_weather_data.fct_weather_summary (table) [1 of 2 in 0.01s]
+19:11:40.609931 [info ]: Started scheduling
+19:11:40.609959 [info ]: Finished scheduling [  0.00s]
+19:11:40.609995 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [91ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+19:11:40.610053 [info ]: Cached model count updated: 2 models (accurate)
+19:11:40.933539 [info ]: Loading profiles.yml
+19:30:30.242697 [debug]: Ignoring unsupported LSP notification
+19:30:39.537112 [debug]: Ignoring unsupported LSP notification
+20:10:31.293174 [debug]: Ignoring unsupported LSP notification
+20:10:41.341524 [debug]: Ignoring unsupported LSP notification
+==================== 2026-10-28T20:12:18.539260Z | 6768d7a9-cb73-4c88-b360-a712e3014760 ====================
+20:12:18.539318 [info ]: Started loading project
+20:12:18.539711 [info ]: Loading profiles.yml
+20:12:18.542634 [info ]: Finished loading project [  0.00s]
+20:12:18.555310 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [16ms]
+20:12:18.555353 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-28T20:12:18.905851Z | 524d3799-ff09-434d-a4a2-b1471e06545d ====================
+20:12:18.905896 [info ]: Started loading project
+20:12:18.906279 [info ]: Loading profiles.yml
+20:12:18.908892 [info ]: Finished loading project [  0.00s]
+20:12:18.921242 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [15ms]
+20:12:18.921286 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-28T20:12:20.725138Z | b628a85c-dd7c-4980-b3cc-5aadecd315c5 ====================
+20:12:20.725186 [info ]: Started loading project
+20:12:20.725569 [info ]: Loading profiles.yml
+20:12:20.728294 [info ]: Finished loading project [  0.00s]
+20:12:20.739071 [info ]: Cached model count updated: 2 models (estimate)
+20:12:20.739080 [info ]: Cached model count updated: 2 models (accurate)
+20:12:20.739098 [info ]: Started scheduling
+20:12:20.739140 [info ]: Finished scheduling [  0.00s]
+20:12:20.739149 [debug]: Compilation - 2 nodes selected: {"model.weather_analytics.fct_weather_summary", "model.weather_analytics.stg_weather_logs"}
+20:12:20.739806 [info ]: Started building task graph
+20:12:20.739843 [info ]: Finished building task graph [  0.00s]
+20:12:20.821473 [info ]: Started rendering (2 nodes)
+20:12:20.821491 [info ]: Started model main_weather_data.fct_weather_summary
+20:12:20.821498 [debug]: Started rendering model main_weather_data.fct_weather_summary
+20:12:20.821512 [info ]: Started model main_weather_data.stg_weather_logs
+20:12:20.821516 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:12:20.823699 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:12:20.823702 [debug]: Compiled SQL for node model.weather_analytics.fct_weather_summary at target\.lsp\compiled\weather_analytics\models\marts\fct_weather_summary.sql
+20:12:20.823764 [debug]: Finished rendering [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:12:20.823784 [info ]: Started analyzing (2 nodes)
+20:12:20.823789 [debug]: Started analyzing model main_weather_data.fct_weather_summary
+20:12:20.823800 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:12:20.823804 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:12:20.823809 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:12:20.823972 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:12:20.823979 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [2 of 2 in 0.00s]
+20:12:20.824144 [debug]: Finished analyzing [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:12:20.824156 [info ]: Finished analyzing [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:12:20.824160 [info ]:  Succeeded model main_weather_data.fct_weather_summary (table) [1 of 2 in 0.00s]
+20:12:20.825883 [info ]: Started scheduling
+20:12:20.825904 [info ]: Finished scheduling [  0.00s]
+20:12:20.825927 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [100ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+20:12:20.825971 [info ]: Cached model count updated: 2 models (accurate)
+20:18:19.249674 [info ]: Loading profiles.yml
+20:18:31.804099 [debug]: Ignoring unsupported LSP notification
+20:19:18.873232 [debug]: Ignoring unsupported LSP notification
+==================== 2026-10-28T20:27:54.365889Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-10-28T20:27:54.366050Z | bfe825a8-5f26-421e-8100-0f99d5d771f4 ====================
+20:27:54.366066 [info ]: Starting dbt LSP server
+20:27:54.366087 [info ]: Connecting to LSP client on port 8000
+20:27:54.370797 [info ]: Successfully connected to LSP client
+20:27:54.370816 [info ]: Creating LSP service...
+20:27:54.371705 [info ]: Creating LSP server...
+20:27:54.371713 [info ]: Starting LSP server...
+20:47:21.466154 [debug]: Ignoring unsupported LSP notification
+20:50:41.929977 [info ]: Loading profiles.yml
+20:50:42.489499 [debug]: Ignoring unsupported LSP notification
+==================== 2026-10-29T20:06:27.226235Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-10-29T20:06:27.227526Z | f1a72870-28dc-40a1-a9fa-4ba85c001b18 ====================
+20:06:27.227561 [info ]: Starting dbt LSP server
+20:06:27.227594 [info ]: Connecting to LSP client on port 8000
+20:06:27.235904 [info ]: Successfully connected to LSP client
+20:06:27.235922 [info ]: Creating LSP service...
+20:06:27.237329 [info ]: Creating LSP server...
+20:06:27.237339 [info ]: Starting LSP server...
+20:09:24.404844 [debug]: Ignoring unsupported LSP notification
+20:11:47.939196 [info ]: Loading profiles.yml
+==================== 2026-10-29T20:11:48.320519Z | b5cdabb4-f752-4e11-ae50-8a90717b1fab ====================
+20:11:48.320650 [info ]: Started loading project
+20:11:48.321190 [info ]: Loading profiles.yml
+20:11:48.327867 [debug]:    Started loading packages
+20:11:48.330063 [debug]:     Loaded [  0.00s] packages
+20:11:48.330796 [info ]: Finished loading project [  0.01s]
+20:11:48.331092 [info ]: Started parsing (3 nodes)
+20:11:48.349687 [debug]: Finished parsing models/staging/source.yml [  0.00s]
+20:11:48.349903 [debug]:    Started building model nodes
+20:11:48.349933 [debug]:   Finished [  0.00s] building model nodes
+20:11:48.349997 [debug]:    Started building model nodes
+20:11:48.350013 [debug]:   Finished [  0.00s] building model nodes
+20:11:48.350434 [debug]:    Started resolving data tests
+20:11:48.350435 [debug]:    Started resolving data tests
+20:11:48.350485 [debug]:   Finished [  0.00s] resolving data tests
+20:11:48.350499 [debug]:   Finished [  0.00s] resolving data tests
+20:11:48.353240 [debug]: Finished parsing models/marts/fct_weather_summary.sql [  0.00s]
+20:11:48.353654 [debug]:    Started building model nodes
+20:11:48.354349 [debug]:   Finished [  0.00s] building model nodes
+20:11:48.354672 [debug]:    Started resolving data tests
+20:11:48.354684 [debug]:   Finished [  0.00s] resolving data tests
+20:11:48.354820 [debug]: Finished parsing models/staging/stg_weather_logs.sql [  0.00s]
+20:11:48.355038 [debug]:    Started typechecking macros
+20:11:48.392245 [debug]: Ignoring unsupported LSP notification
+20:11:48.427082 [debug]:   Finished [  0.07s] typechecking macros
+20:11:48.427872 [info ]: Finished parsing [  0.10s] (3 nodes, 0 skipped, 0 errors)
+20:11:48.428355 [info ]: Cached model count updated: 2 models (estimate)
+20:11:48.428364 [info ]: Cached model count updated: 2 models (accurate)
+20:11:48.428422 [info ]: Started scheduling
+20:11:48.428539 [info ]: Finished scheduling [  0.00s]
+20:11:48.428565 [debug]: Compilation - 0 nodes selected: {}
+20:11:48.428615 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+20:11:48.428631 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+20:11:48.428695 [info ]: Started scheduling
+20:11:48.428745 [info ]: Finished scheduling [  0.00s]
+20:11:48.428854 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "weather_data", schema: "main", table: "raw_weather_logs" }) and interval: None
+20:11:48.429781 [info ]: Started building task graph
+20:11:48.429846 [info ]: Finished building task graph [  0.00s]
+20:11:48.509952 [info ]: Started scheduling
+20:11:48.509999 [info ]: Finished scheduling [  0.00s]
+20:11:48.510107 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [189ms]
+20:11:48.510185 [info ]: Cached model count updated: 2 models (accurate)
+==================== 2026-10-29T20:11:50.252110Z | ee640b3d-eefb-4f4e-b338-67d14b6a931e ====================
+20:11:50.252157 [info ]: Started loading project
+20:11:50.252531 [info ]: Loading profiles.yml
+20:11:50.255204 [info ]: Finished loading project [  0.00s]
+20:11:50.266208 [info ]: Cached model count updated: 2 models (estimate)
+20:11:50.266218 [info ]: Cached model count updated: 2 models (accurate)
+20:11:50.266238 [info ]: Started scheduling
+20:11:50.266276 [info ]: Finished scheduling [  0.00s]
+20:11:50.266285 [debug]: Compilation - 2 nodes selected: {"model.weather_analytics.fct_weather_summary", "model.weather_analytics.stg_weather_logs"}
+20:11:50.267090 [info ]: Started building task graph
+20:11:50.267171 [info ]: Finished building task graph [  0.00s]
+20:11:50.331393 [info ]: Started rendering (2 nodes)
+20:11:50.331430 [info ]: Started model main_weather_data.fct_weather_summary
+20:11:50.331447 [debug]: Started rendering model main_weather_data.fct_weather_summary
+20:11:50.331479 [info ]: Started model main_weather_data.stg_weather_logs
+20:11:50.331484 [debug]: Started rendering model main_weather_data.stg_weather_logs
+20:11:50.334727 [debug]: Compiled SQL for node model.weather_analytics.stg_weather_logs at target\.lsp\compiled\weather_analytics\models\staging\stg_weather_logs.sql
+20:11:50.334875 [debug]: Finished rendering [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:11:50.334915 [info ]: Started analyzing (2 nodes)
+20:11:50.334922 [debug]: Started analyzing model main_weather_data.stg_weather_logs
+20:11:50.334990 [debug]: Compiled SQL for node model.weather_analytics.fct_weather_summary at target\.lsp\compiled\weather_analytics\models\marts\fct_weather_summary.sql
+20:11:50.335058 [debug]: Finished rendering [  0.00s] model main_weather_data.fct_weather_summary [success]
+20:11:50.335073 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+20:11:50.335082 [debug]: Started analyzing model main_weather_data.fct_weather_summary
+20:11:50.338784 [debug]: Finished analyzing [  0.00s] model main_weather_data.stg_weather_logs [success]
+20:11:50.338797 [info ]:  Succeeded model main_weather_data.stg_weather_logs (table) [2 of 2 in 0.01s]
+20:11:50.342517 [debug]: Finished analyzing [  0.01s] model main_weather_data.fct_weather_summary [success]
+20:11:50.342529 [info ]: Finished analyzing [  0.01s] (2 nodes, 0 skipped, 0 errors)
+20:11:50.342533 [info ]:  Succeeded model main_weather_data.fct_weather_summary (table) [1 of 2 in 0.01s]
+20:11:50.344125 [info ]: Started scheduling
+20:11:50.344147 [info ]: Finished scheduling [  0.00s]
+20:11:50.344178 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [92ms]
+Processed: 2 models
+Summary: 2 total | 2 success
+20:11:50.344234 [info ]: Cached model count updated: 2 models (accurate)
+20:11:50.681697 [info ]: Loading profiles.yml
+20:14:56.136349 [debug]: Ignoring unsupported LSP notification
+20:14:59.513143 [debug]: Ignoring unsupported LSP notification
+20:25:38.201008 [debug]: Ignoring unsupported LSP notification
+20:25:40.302053 [debug]: Ignoring unsupported LSP notification
+20:26:00.923194 [debug]: Ignoring unsupported LSP notification
+20:26:03.931999 [debug]: Ignoring unsupported LSP notification
+20:34:22.841930 [debug]: Ignoring unsupported LSP notification
+20:35:58.881225 [debug]: Ignoring unsupported LSP notification
+20:36:16.169718 [debug]: Ignoring unsupported LSP notification
+20:36:18.217486 [debug]: Ignoring unsupported LSP notification
+20:36:28.993709 [debug]: Ignoring unsupported LSP notification
+20:38:57.636461 [debug]: Ignoring unsupported LSP notification
+20:39:42.111871 [debug]: Ignoring unsupported LSP notification

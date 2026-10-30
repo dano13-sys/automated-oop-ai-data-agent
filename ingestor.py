@@ -3,6 +3,7 @@ import requests
 import duckdb
 from datetime import datetime
 import subprocess
+from analyst import AIPipelineAnalyst
 
 class WeatherDataIngestor:
     """
@@ -10,7 +11,7 @@ class WeatherDataIngestor:
     stream, and process raw meteorological data records into a local database.
     """
     def __init__(self):
-        self.target_cities=["Toronto,CA", "Hamilton,CA", "London,CA", "Los Angeles,US", "Orlando,US"]
+        self.target_cities=["Toronto,CA", "Los Angeles,US", "London,GB", "Sydney,AU", "Tokyo,JP"]
         self.api_key = os.environ.get("OPENWEATHER_API_KEY")
         self.db_path ="weather_data.duckdb"
         #self.conn = duckdb.connect(self.db_path)
@@ -85,9 +86,8 @@ class WeatherDataIngestor:
         
 #execution gate
 if __name__ == "__main__":
-    print("Testing object generation ...")
-    my_test_object = WeatherDataIngestor()
-    print(f"Success! Object contains: {my_test_object.target_cities}")
+    print("===STARTING AUTONOMOUS WEATHER & AI PLATFORM===")
+    my_test_object = WeatherDataIngestor()    
     my_test_object.initialize_warehouse()
     print(f"Success! Database warehouse file initialized smoothly.")
 
@@ -100,6 +100,14 @@ if __name__ == "__main__":
 
     # Orchestration
     print("\nTriggering transformation engine compiler layer...")    
-    subprocess.run(["dbt", "run"], check=True)
-    print("\nEnd-to-End Ingestion and Transformation Pipeline Executed Successfully!")
-   
+    #subprocess.run(["dbt", "run"], check=True)
+    subprocess.run(["dbt", "run", "--profiles-dir", "."], check=True)
+    print("\n dbt models built successfully.")  
+
+    print("\n Handoff to AI Analytics Agent initiated...") 
+    try:
+        analyst_agent = AIPipelineAnalyst()
+        analyst_agent.generate_daily_report()
+    except Exception as e:
+        print(f"[❌ AI ANALYST ERROR] Failed to execute: {e}")
+    print("\n=== End-to-End Ingestion, Transformation, and AI Diagnostics Executed Successfully! ===")
