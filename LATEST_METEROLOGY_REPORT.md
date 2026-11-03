@@ -1,5 +1,13 @@
 # Autonomous Global Weather Intelligence Bulletin
 
+**Report Generation Window:** 2026-11-03 01:22:54.269304+00:00  UTC
+
+### START Gemini GenAI Safety Analysis
+⚠️ **System Advisory:** The automated meteorological text analysis is temporarily unavailable due to high upstream API demand from Google Gemini infrastructure. 
+
+
+
+### END Gemini GenAI Safety Analysis
 **Report Generation Window:** 2026-11-02 18:54:08.263265+00:00  UTC
 
 ### START Gemini GenAI Safety Analysis
