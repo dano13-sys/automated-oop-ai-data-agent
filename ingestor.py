@@ -78,9 +78,16 @@ class WeatherDataIngestor:
         with duckdb.connect(self.db_path) as conn:
             for record in records:
                 conn.execute("""
-                    INSERT INTO raw_weather_logs (city, temperature, pressure, humidity, extracted_at)
-                    VALUES (?, ?, ?, ?, ?)
-                """, (record["city"], record["temperature"], record["pressure"], record["humidity"], record["extracted_at"]))
+            INSERT INTO raw_weather_logs (city, temperature, pressure, humidity, extracted_at)
+            SELECT ?, ?, ?, ?, ?
+            WHERE NOT EXISTS (
+                SELECT 1 FROM raw_weather_logs 
+                WHERE city = ? AND extracted_at = ?
+            )
+             """, (
+            record["city"], record["temperature"], record["pressure"], record["humidity"], record["extracted_at"],
+            record["city"], record["extracted_at"]
+            ))
                 print(f"Data successfully committed to DuckDB table for {record['city']}.")
 
         

@@ -26,7 +26,7 @@ jobs:
       - name: Compile and Install Platform Packages
         run: |
           python -m pip install --upgrade pip
-          pip install requests duckdb dbt-duckdb google-genai requests
+          pip install requests duckdb dbt-duckdb google-genai 
 
       - name: Verify dbt Project Profile Mapping
         run: |
@@ -45,7 +45,7 @@ jobs:
           git config --global user.email "actions@github.com"
 
           # Stage the newly created/updated report file
-          git add LATEST_METEROLOGY_REPORT.md
+          git add LATEST_METEOROLOGY_REPORT.md weather_data.duckdb
 
           #Only commit if the AI report actually contains new or changed text
           git diff-index --quiet HEAD || git commit -m "Hourly Platform Update: Materialized Gemini Safety Intelligence"

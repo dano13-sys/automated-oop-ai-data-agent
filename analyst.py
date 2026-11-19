@@ -1,121 +1,177 @@
 import os
 import duckdb
+from datetime import datetime, timezone
 from google import genai
 from google.genai import types
-
+import json
 
 class AIPipelineAnalyst:
-
-    """Use the Google GenAI API to analyze the data in the DuckDB warehouse."""
-
-
-    def __init__(self, dbt_path="weather_data.duckdb"):
-        self.dbt_project_path = dbt_path
-
+    """
+    An Object-Oriented GenAI Agent that evaluates 5-day meteorological trajectories
+    (Temperature, Barometric Pressure, and Humidity), applies multi-model failover routing,
+    and persists intelligence back into DuckDB.
+    """
+    def __init__(self, db_path="weather_data.duckdb"):
+        self.db_path = db_path
         self.api_key = os.environ.get("GEMINI_API_KEY")
-        if not self.api_key or self.api_key[0] in ["O", "0"]:
-            raise ValueError("System Guard Alert: Invalid API key format! The passport number cannot begin with a numerical 0 or an alphabetical O.")
+        self.report_file = "LATEST_METEOROLOGY_REPORT.md"
+
+        if not self.api_key:
+            raise ValueError("System Guard Alert: GEMINI_API_KEY environment variable is missing.")
 
         self.client = genai.Client(api_key=self.api_key)
 
+        # Updated system prompt to correlate temperature, pressure drops, and humidity
         self.system_instruction = (
-           "Act as an expert wilderness safety meteorologist. Review the provided metrics "
-            "and output a safety warning update. You MUST explicitly evaluate and include a statement "
-            "for every distinct region provided "
-            "Format your output as a collection of short statements, separating each region's "
-            "forecast with a clear line break."
+            "You are a senior wilderness safety meteorologist analyzing 5-day weather trajectories "
+            "across global tracking nodes (Toronto, Los Angeles, London, Sydney, Tokyo). "
+            "Compare the earliest readings in the 5-day window against the most recent readings for each city. "
+            "Correlate temperature swings, barometric pressure trends (e.g., falling pressure signaling storm fronts), "
+            "and relative humidity levels to identify emerging outdoor safety hazards. "
+            "Format your response as a concise executive bulletin with one short bullet point per city. "
+            "Keep the total response under 200 words."
         )
 
     def generate_daily_report(self):
-        """         
-        Queries dbt metrics, structures them for Gemini, fetches the AI analysis,
-        and saves the executive text summary straight back to the warehouse.
-        Implements high-availability try/except shielding to intercept 503 errors.        
-        """
-        print("\n[AI Analyst] Querying dbt analytical marts...")
-        conn = duckdb.connect(self.dbt_project_path)
+        print("\n[AI Analyst] Connecting to DuckDB warehouse for 5-day telemetry extraction...")
+        conn = duckdb.connect(self.db_path)
 
         try:
-            query_results = conn.execute("""
-                SELECT city_node, reading_date, avg_temperature_celsius, max_temperature_celsius, min_temperature_celsius
+            # ==========================================
+            # TRY BLOCK 1: FRESHNESS GATE & 5-DAY EXTRACTION
+            # ==========================================
+            latest_date_row = conn.execute("""
+                SELECT MAX(reading_date) 
                 FROM main_weather_data.fct_weather_summary
-                WHERE reading_date = (SELECT MAX(reading_date) FROM main_weather_data.fct_weather_summary)
-                AND reading_date >= CURRENT_DATE - INTERVAL '1' DAY
-                ORDER BY city_node;
+                WHERE reading_date >= CURRENT_DATE - INTERVAL '1' DAY;
+            """).fetchone()
+
+            if not latest_date_row or latest_date_row[0] is None:
+                print("[AI Analyst] Freshness SLA failed: No data within the last 24 hours. Skipping AI analysis.")
+                return
+
+            # Pull Temperature, Barometric Pressure, and Relative Humidity across the 5-day window
+            query_results = conn.execute("""
+                SELECT 
+                    city_node, 
+                    reading_date, 
+                    avg_temperature_celsius, 
+                    max_temperature_celsius, 
+                    min_temperature_celsius,                    
+                    avg_barometric_pressure_hpa,
+                    avg_humidity_percentage,
+                FROM main_weather_data.fct_weather_summary
+                WHERE reading_date >= CURRENT_DATE - INTERVAL '5' DAY
+                ORDER BY city_node ASC, reading_date ASC;
             """).fetchall()
 
-            db_now=conn.execute("SELECT CURRENT_TIMESTAMP;").fetchone()[0]
+            if not query_results:
+                print("[AI Analyst] No records found in 5-day window. Skipping AI analysis.")
+                return
 
-        except Exception as db_err:
-            print(f"[❌ DATABASE ERROR] Failed to query DuckDB: {db_err}")
-            return
+            # Format all 5 metrics into a structured chronological payload for Gemini
+            payload_lines = ["5-Day Global Weather Telemetry (Chronological by City):"]
+            for row in query_results:
+                city, r_date, avg_t, max_t, min_t, avg_p, avg_h = row
+                payload_lines.append(
+                    f"- {city} | {r_date}: Temp Avg {avg_t:.1f}°C (Min {min_t:.1f}°C / Max {max_t:.1f}°C) | "
+                    f"Pressure {avg_p:.1f} hPa | Humidity {avg_h:.0f}%"
+                )
+            data_payload = "\n".join(payload_lines)
+
+            # ==========================================
+            # TRY BLOCK 2: AI INFERENCE (STRUCTURED JSON)
+            # ==========================================
+            json_instruction = (
+                "You are a senior wilderness safety meteorologist analyzing 5-day weather trajectories. "
+                "Compare the earliest readings in the 5-day window against the most recent readings for each city. "
+                "Correlate temperature swings, barometric pressure trends, and relative humidity levels to identify outdoor safety hazards. "
+                "Return ONLY a valid JSON object where each key is the exact city node string (e.g., 'Toronto,CA', 'Los Angeles,US', 'London,GB', 'Sydney,AU', 'Tokyo,JP') "
+                "and each value is a concise 1-to-2 sentence safety briefing for that city. Do not wrap the JSON in markdown code blocks."
+            )
+
+            candidate_models = [
+                "gemini-3.5-flash-lite",
+                "gemini-3.5-flash",
+                "gemini-3.8-flash"
+            ]
+
+            city_insights_dict = None
+            successful_model = "FALLBACK_ADVISORY"
+
+            for model_name in candidate_models:
+                try:
+                    print(f"[AI Analyst] Requesting structured JSON synthesis from {model_name}...")
+                    response = self.client.models.generate_content(
+                        model=model_name,
+                        contents=data_payload,
+                        config=types.GenerateContentConfig(
+                            system_instruction=json_instruction,
+                            response_mime_type="application/json",
+                            temperature=0.3
+                        )
+                    )
+                    city_insights_dict = json.loads(response.text.strip())
+                    successful_model = model_name
+                    print(f"[AI Analyst] Structured JSON synthesis complete via {model_name}.")
+                    break
+                except Exception as api_err:
+                    print(f"[⚠️ AI WARNING] {model_name} unavailable ({api_err}). Routing to next model...")
+
+            if not city_insights_dict:
+                print("[AI SYSTEM WARNING] All Gemini models busy. Writing fallback dictionary.")
+                fallback_msg = "Automated meteorological commentary is temporarily unavailable due to high upstream API demand."
+                city_insights_dict = {
+                    "Toronto,CA": fallback_msg,
+                    "Los Angeles,US": fallback_msg,
+                    "London,GB": fallback_msg,
+                    "Sydney,AU": fallback_msg,
+                    "Tokyo,JP": fallback_msg
+                }
+
+            # ==========================================
+            # TRY BLOCK 3: PERSIST TO DUCKDB & MARKDOWN
+            # ==========================================
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS main_weather_data.ai_weather_insights (
+                    generated_at TIMESTAMP,
+                    model_used VARCHAR,
+                    trend_analysis VARCHAR
+                );
+            """)
+
+            # Store the JSON string in DuckDB for Streamlit lookup
+            conn.execute("""
+                INSERT INTO main_weather_data.ai_weather_insights (generated_at, model_used, trend_analysis)
+                VALUES (CURRENT_TIMESTAMP, ?, ?);
+            """, (successful_model, json.dumps(city_insights_dict)))
+            print(f"[AI Analyst] Structured JSON insights persisted to DuckDB (Model: {successful_model}).")
+
+            # Format cleanly as bullet points for the GitHub Markdown ledger
+            formatted_bullets = "\n".join([f"* **{city}:** {note}" for city, note in city_insights_dict.items()])
+            timestamp_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+            new_entry = (
+                f"### 🌐 5-Day Trajectory Report — {timestamp_str}\n"
+                f"*Engine: `{successful_model}`*\n\n"
+                f"{formatted_bullets}\n\n---\n\n"
+            )
+
+            existing_content = ""
+            if os.path.exists(self.report_file):
+                with open(self.report_file, "r", encoding="utf-8") as f:
+                    existing_content = f.read()
+
+            with open(self.report_file, "w", encoding="utf-8") as f:
+                f.write(new_entry + existing_content)
+            print(f"[AI Analyst] Prepended formatted bullets to {self.report_file}.")
+   
+
+        except Exception as e:
+            print(f"[AI Analyst] CRITICAL PIPELINE ERROR: {e}")
+            raise
         finally:
             conn.close()
 
-            if not query_results:
-                print("[AI Analyst] No data found in fct_weather_summary. Skipping AI analysis.")
-                return
-            
-            data_payload="Review the following recent weather metrics:\n"
-            for row in query_results:
-                data_payload += (
-                    f"- City: {row[0]}, Date: {row[1]}, Avg Temp: {row[2]}°C, "
-                    f"Max: {row[3]}°C, Min: {row[4]}°C\n"
-                )
-
-            print(data_payload)
-            print("[AI Analyst] Shipping metrics to Google Gemini...")
-
-            try:
-                response = self.client.models.generate_content(
-                    model='gemini-3.8-flash',
-                    contents=data_payload,
-                    config=types.GenerateContentConfig(
-                        system_instruction=self.system_instruction,
-                        temperature=0.3     
-                    )
-                )
-
-                ai_summary_text=response.text.strip()    
-                print(f"[AI Analyst] Analysis complete. Resulting text:\n\n\"{ai_summary_text}\"\n")
-                
-
-            except Exception as api_err:
-                print(f"\n[⚠️ AI SYSTEM WARNING] Upstream Gemini API unavailable: {api_err}")
-                print("[AI SYSTEM WARNING] Engaging graceful degradation protocols. Materializing placeholder asset.")
-
-                ai_summary_text = (
-                    "⚠️ **System Advisory:** The automated meteorological text analysis is temporarily "
-                    "unavailable due to high upstream API demand from Google Gemini infrastructure. "
-                )
-                # MATERIALIZE PUBLIC PORTFOLIO ASSET: Always runs, even if fallback text is engaged
-            print("[AI Analyst] Materializing public portfolio ledger updates...")
-            existing_history=""
-            if os.path.exists("LATEST_METEROLOGY_REPORT.md"):
-                with open("LATEST_METEROLOGY_REPORT.md", "r", encoding="utf-8") as h_file:
-                    lines=h_file.readlines()
-                    # Skip the first two lines
-                    if len(lines) > 2:
-                        existing_history = "".join(lines[2:])  # Keep the rest of the file after the first two lines
-            # Re-write the file prepending the newest insights to the very top of the file, preserving historical content below
-            
-            with open("LATEST_METEROLOGY_REPORT.md", "w", encoding="utf-8") as md_file:
-                    md_file.write(f"# Autonomous Global Weather Intelligence Bulletin\n\n")
-                    
-                    md_file.write(f"**Report Generation Window:** {db_now}  UTC\n\n")  
-
-                    md_file.write("### START Gemini GenAI Safety Analysis\n") 
-                    md_file.write(f"{ai_summary_text}\n\n")
-                    md_file.write("\n\n### END Gemini GenAI Safety Analysis\n")
-
-                    if existing_history:                        
-                        md_file.write(existing_history)
-            print("[AI Analyst] Public asset 'LATEST_METEOROLOGY_REPORT.md' successfully written.")           
-
-
 if __name__ == "__main__":
-    # Test gate for local verification
-    analyst_agent = AIPipelineAnalyst()
-    analyst_agent.generate_daily_report()
-
-        
+    analyst = AIPipelineAnalyst()
+    analyst.generate_daily_report()
