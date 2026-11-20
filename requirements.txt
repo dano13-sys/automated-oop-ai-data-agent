@@ -1,7 +1,4 @@
 duckdb
-dbt-duckdb
-google-genai
-requests
 streamlit
 plotly
 pandas
