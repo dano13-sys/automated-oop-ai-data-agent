@@ -1,3 +1,14 @@
+### 🌐 5-Day Trajectory Report — 2026-11-20 04:56:04 UTC
+*Engine: `gemini-3.5-flash-lite`*
+
+* **London,GB:** Barometric pressure has stabilized after a mid-window low, but lingering high humidity (94%) and cool temperatures pose persistent hypothermia risks for unprepared wilderness travelers. Wet conditions will remain prevalent across trails.
+* **Los Angeles,US:** A notable temperature drop paired with a sharp surge in relative humidity to 81% creates high chill hazards in canyon and coastal trails. Hikers should prepare for rapidly changing microclimates and damp conditions.
+* **Sydney,AU:** Temperatures have risen significantly alongside a drop in pressure and moderate humidity, increasing heat stress and dehydration risks during exposed daytime treks. Monitor for sudden localized wind shifts as pressure gradually declines.
+* **Tokyo,JP:** A dramatic drop in relative humidity down to 18% coupled with rising temperatures creates extreme dryness and elevated wildfire hazards. Outdoor recreationists should exercise heightened caution with any spark-generating activities.
+* **Toronto,CA:** Mild overall temperature increases and stable high pressure maintain benign outdoor conditions with moderate humidity levels. Standard trail safety is sufficient, though evening cooling requires standard layering.
+
+---
+
 ### 🌐 5-Day Trajectory Report — 2026-11-19 23:56:55 UTC
 *Engine: `gemini-3.5-flash-lite`*
 
