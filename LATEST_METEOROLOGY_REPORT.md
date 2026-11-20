@@ -1,3 +1,14 @@
+### 🌐 5-Day Trajectory Report — 2026-11-20 13:42:26 UTC
+*Engine: `gemini-3.5-flash-lite`*
+
+* **London,GB:** London experienced a moderate temperature swing with rising pressure and decreasing humidity, pointing to improving fair-weather conditions after earlier dampness. Exercise standard caution for slick terrain from previous high humidity.
+* **Los Angeles,US:** Los Angeles saw a sharp temperature drop paired with a significant increase in relative humidity and stable pressure, signaling potential coastal fog or chill. Hikers should prepare for rapid cooling and reduced visibility.
+* **Sydney,AU:** Sydney exhibited fluctuating temperatures and rising humidity paired with falling barometric pressure, indicating potential incoming precipitation or storm activity. Outdoor adventurers should monitor skies closely for rapid weather deterioration.
+* **Tokyo,JP:** Tokyo underwent a sharp drop in relative humidity down to critical levels alongside fluctuating pressure and temperatures, creating high wildfire and dehydration risks. Outdoor recreationists should practice extreme fire safety and stay hydrated.
+* **Toronto,CA:** Toronto recorded a cooling trend with rising humidity and stable barometric pressure, indicating a transition toward damp and chillier conditions. Ensure proper layering to mitigate cold-stress risks during prolonged exposure.
+
+---
+
 ### 🌐 5-Day Trajectory Report — 2026-11-20 04:56:04 UTC
 *Engine: `gemini-3.5-flash-lite`*
 
