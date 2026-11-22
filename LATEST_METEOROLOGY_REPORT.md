@@ -1,3 +1,14 @@
+### 🌐 5-Day Trajectory Report — 2026-11-22 15:23:29 UTC
+*Engine: `gemini-3.5-flash-lite`*
+
+* **London,GB:** Barometric pressure rose slightly from 987 hPa to 1011 hPa while average temperatures dropped from 10.4°C to 8.4°C, maintaining high humidity. Hikers should prepare for damp, chilly conditions and stable but cool atmospheric pressure.
+* **Los Angeles,US:** Barometric pressure remained steady near 1016-1019 hPa while temperatures declined from 20.0°C to 11.6°C with moderate humidity. Outdoor enthusiasts face cooler coastal conditions with minimal severe hazard risks.
+* **Sydney,AU:** Barometric pressure dropped slightly from 1025 hPa to 1012 hPa alongside an increase in average temperatures from 20.8°C to 22.2°C and high humidity. Outdoor travelers should monitor for sudden localized thermal shifts and potential muggy discomfort.
+* **Tokyo,JP:** Barometric pressure increased notably from 1000 hPa to 1028 hPa while average temperatures fell from 13.2°C to 7.8°C with moderate humidity. Wilderness visitors need to dress for sharply colder conditions associated with high-pressure systems.
+* **Toronto,CA:** Barometric pressure decreased moderately from 1029 hPa to 1016 hPa while temperatures fell from 13.8°C to 9.2°C alongside saturated humidity levels. Be alert for potential moisture accumulation, fog, and brisk conditions as the system shifts.
+
+---
+
 ### 🌐 5-Day Trajectory Report — 2026-11-22 06:55:57 UTC
 *Engine: `gemini-3.5-flash`*
 
