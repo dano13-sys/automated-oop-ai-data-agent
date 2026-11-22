@@ -1,3 +1,14 @@
+### 🌐 5-Day Trajectory Report — 2026-11-22 21:51:02 UTC
+*Engine: `gemini-3.5-flash`*
+
+* **London,GB:** A significant temperature drop from 10.4°C to 4.8°C alongside rising pressure up to 1017 hPa indicates stabilizing but chilling high-pressure weather. High ambient humidity heightens cold exposure risks, requiring layered, moisture-wicking gear for outdoor safety.
+* **Los Angeles,US:** Temperatures have remained overall steady around 20°C despite sharp nocturnal drops to 10.3°C, paired with a subtle pressure decline. Hikers should plan for wide diurnal swings and keep warm layers handy for evening trail cooling.
+* **Sydney,AU:** Rising temperatures up to 26.3°C paired with a notable pressure drop to 1011 hPa signal a developing low-pressure system and unstable atmospheric conditions. Be prepared for sudden weather transitions, heat exposure, and potential frontal squalls.
+* **Tokyo,JP:** A dramatic pressure increase to 1030 hPa combined with cooling temperatures dropping to 7.8°C marks the entry of a dry, rigid high-pressure airmass. Adventurers should prepare for crisp, windy conditions and lower relative humidity levels.
+* **Toronto,CA:** Barometric pressure dropped steadily from 1029 hPa to 1011 hPa alongside rising humidity levels, indicating an approaching wet low-pressure system. Outdoor plans should account for damp conditions, reduced visibility, and chilled temperatures.
+
+---
+
 ### 🌐 5-Day Trajectory Report — 2026-11-22 15:23:29 UTC
 *Engine: `gemini-3.5-flash-lite`*
 
