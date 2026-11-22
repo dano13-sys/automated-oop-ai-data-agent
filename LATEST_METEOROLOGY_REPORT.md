@@ -1,3 +1,14 @@
+### 🌐 5-Day Trajectory Report — 2026-11-22 06:55:57 UTC
+*Engine: `gemini-3.5-flash`*
+
+* **London,GB:** Steadily rising barometric pressure following initial low pressure indicates stabilizing atmospheric conditions, though persistent high humidity near 86% and dropping temperatures down to 5.3°C increase damp cold hazards and risk of hypothermia for prolonged outdoor exposure.
+* **Los Angeles,US:** Temperatures have cooled from 20.0°C to 13.0°C with significant diurnal swings and humidity fluctuations down to 32%, requiring outdoorsmen to prepare for sudden ambient cooling and dehydration.
+* **Sydney,AU:** A steady drop in pressure from 1025.0 hPa to 1011.0 hPa accompanied by a warming trend reaching 27.1°C signals potential incoming unstable storm fronts and heightened heat exhaustion risk.
+* **Tokyo,JP:** Strong high pressure building up to 1022.0 hPa has driven relative humidity down from 80% to 33%, creating elevated fire weather hazards and dry wind conditions for outdoor travelers.
+* **Toronto,CA:** A sharp drop in temperature to 5.4°C combined with falling barometric pressure and high saturation (91% humidity) creates hazardous, damp cold conditions with potential fog and icing risks.
+
+---
+
 ### 🌐 5-Day Trajectory Report — 2026-11-21 23:23:31 UTC
 *Engine: `gemini-3.5-flash-lite`*
 
