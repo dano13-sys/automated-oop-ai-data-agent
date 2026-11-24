@@ -1,3 +1,14 @@
+### 🌐 5-Day Trajectory Report — 2026-11-24 10:59:52 UTC
+*Engine: `gemini-3.5-flash-lite`*
+
+* **London,GB:** London experienced a noticeable cooling trend with temperatures dropping from around 6.9°C to 6.3°C, alongside moderate barometric stabilization. High relative humidity hovering around 85% increases the risk of dampness and morning chill for outdoor activities.
+* **Los Angeles,US:** Los Angeles maintained relatively mild temperatures shifting slightly from 15.9°C to 13.8°C with steady barometric pressure. Moderate humidity around 60% provides comfortable and safe conditions for wilderness exploration.
+* **Sydney,AU:** Sydney showed significant warming and cooling volatility, with temperatures dropping sharply from early highs near 20°C down to 16.5°C alongside rising pressure. High humidity reaching 90% combined with the temperature swing requires vigilance for heat fatigue and sudden weather shifts.
+* **Tokyo,JP:** Tokyo saw a sharp pressure drop from 1005 hPa to 1001 hPa alongside a spike in relative humidity to 91%, signaling an approaching low-pressure system. Outdoor recreationists should prepare for rapid weather deterioration and potential precipitation.
+* **Toronto,CA:** Toronto experienced a severe cold plunge, with temperatures dropping below freezing to -1.1°C and barometric pressure rising significantly. These wintry conditions create high risks of frost and ice hazards on backcountry trails.
+
+---
+
 ### 🌐 5-Day Trajectory Report — 2026-11-24 00:58:59 UTC
 *Engine: `FALLBACK_ADVISORY`*
 
