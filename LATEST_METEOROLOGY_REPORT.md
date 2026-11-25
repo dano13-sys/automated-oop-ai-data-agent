@@ -1,3 +1,14 @@
+### 🌐 5-Day Trajectory Report — 2026-11-25 04:20:13 UTC
+*Engine: `gemini-3.5-flash-lite`*
+
+* **London,GB:** Temperatures trended downward from 6.1°C to 4.1°C alongside fluctuating barometric pressure and persistently high humidity around 88%, creating a consistent hypothermia and dampness hazard for unprepared campers. Proper layering and waterproof shelter are critical to combat these persistent chilling conditions.
+* **Los Angeles,US:** Temperatures rose from 13.4°C to 17.2°C while barometric pressure held stable and relative humidity decreased to 51%, maintaining generally benign dry-weather conditions. Outdoor travelers should remain mindful of moderate diurnal temperature shifts.
+* **Sydney,AU:** Temperatures shifted modestly from 23.3°C to 20.5°C with rising barometric pressure (1016 hPa to 1024 hPa) and steady humidity near 76%, indicating stable high-pressure influence. Standard sun protection and hydration remain the primary recommendations for outdoor activities.
+* **Tokyo,JP:** Temperatures experienced a slight drop from 16.2°C to 14.4°C while barometric pressure increased moderately and humidity fell to 28%, indicating very dry air. Hikers should guard against dehydration and monitor for rapid wind-driven temperature drops.
+* **Toronto,CA:** Temperatures plummeted from 12.2°C down to -2.4°C as barometric pressure rose sharply to 1037.0 hPa, signaling an aggressive cold front arrival. Severe frost and freezing hazards demand immediate adoption of winter survival gear and insulated gear.
+
+---
+
 ### 🌐 5-Day Trajectory Report — 2026-11-24 21:16:26 UTC
 *Engine: `gemini-3.5-flash-lite`*
 
