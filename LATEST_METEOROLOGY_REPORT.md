@@ -1,3 +1,14 @@
+### 🌐 5-Day Trajectory Report — 2026-11-26 19:45:08 UTC
+*Engine: `FALLBACK_ADVISORY`*
+
+* **Toronto,CA:** Automated meteorological commentary is temporarily unavailable due to high upstream API demand.
+* **Los Angeles,US:** Automated meteorological commentary is temporarily unavailable due to high upstream API demand.
+* **London,GB:** Automated meteorological commentary is temporarily unavailable due to high upstream API demand.
+* **Sydney,AU:** Automated meteorological commentary is temporarily unavailable due to high upstream API demand.
+* **Tokyo,JP:** Automated meteorological commentary is temporarily unavailable due to high upstream API demand.
+
+---
+
 ### 🌐 5-Day Trajectory Report — 2026-11-26 09:35:18 UTC
 *Engine: `gemini-3.5-flash-lite`*
 
