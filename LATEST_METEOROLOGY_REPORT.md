@@ -1,3 +1,14 @@
+### 🌐 5-Day Trajectory Report — 2026-11-27 02:53:30 UTC
+*Engine: `gemini-3.5-flash-lite`*
+
+* **London,GB:** London experienced a noticeable cooling trend with temperatures dropping to 1.7°C under stable high pressure, creating potential frost and slick conditions on early morning trails. Relative humidity remained consistently high around 80-88%, increasing the risk of dampness and rapid heat loss for unprepared campers.
+* **Los Angeles,US:** Los Angeles exhibited a significant warming trend with afternoon highs climbing to nearly 26°C accompanied by low relative humidity dipping down to 25%. This dry heat and low humidity elevation present heightened wildfire hazards and significant dehydration risks for backcountry hikers.
+* **Sydney,AU:** Sydney showed fluctuating temperatures with mild-to-warm conditions and high humidity frequently exceeding 80%, culminating in a warm 25.4°C reading at the end of the window. The humid conditions combined with shifting barometric pressure require travelers to monitor for sudden coastal storms and heat exhaustion.
+* **Tokyo,JP:** Tokyo experienced a dramatic pressure drop down to 1001.0 hPa mid-period alongside a humidity surge to 91%, followed by a stabilizing trend ending near 15.9°C. This sharp barometric shift indicates a passing frontal system that likely brought sudden heavy precipitation and strong wind gusts to mountain routes.
+* **Toronto,CA:** Toronto underwent a severe drop into freezing temperatures reaching sub-zero minimums, paired with a significant barometric pressure peak before dropping off to 1009.0 hPa. These freezing overnight conditions combined with fluctuating humidity create high-risk icy trail surfaces and potential hypothermia hazards.
+
+---
+
 ### 🌐 5-Day Trajectory Report — 2026-11-26 19:45:08 UTC
 *Engine: `FALLBACK_ADVISORY`*
 
