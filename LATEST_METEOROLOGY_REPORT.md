@@ -1,3 +1,14 @@
+### 🌐 5-Day Trajectory Report — 2026-11-28 03:56:21 UTC
+*Engine: `gemini-3.5-flash-lite`*
+
+* **London,GB:** Conditions remain consistently cool and damp with persistent high humidity near 86%, posing a baseline risk of hypothermia for unprepared campers. Barometric pressure is stable, indicating steady weather without sudden convective threats.
+* **Los Angeles,US:** Temperatures have risen significantly alongside very low relative humidity dropping to 54%, increasing wildfire vulnerability and dehydration risks. Barometric pressure remains steady, maintaining clear but dry outdoor conditions.
+* **Sydney,AU:** A noticeable drop in barometric pressure down to 1008.0 hPa combined with warm temperatures signals an approaching storm system. Outdoor enthusiasts should prepare for sudden wind shifts and potential precipitation.
+* **Tokyo,JP:** A sharp barometric pressure drop to 1000.0 hPa accompanied by high humidity of 93% indicates a rapidly developing low-pressure system. Expect heavy precipitation and strong gusts that could create hazardous mountain or coastal conditions.
+* **Toronto,CA:** A significant plummet in barometric pressure to 996.0 hPa paired with high humidity near 91% points to an aggressive incoming storm front. Rapid temperature fluctuations and damp conditions heighten the risk of cold-weather exposure.
+
+---
+
 ### 🌐 5-Day Trajectory Report — 2026-11-27 22:00:11 UTC
 *Engine: `gemini-3.5-flash-lite`*
 
